@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Cabbage - Product Details | Ecobazar</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS Stylesheets -->
+    <link rel="stylesheet" href="../pagesCss/style_.css">
+    <link rel="stylesheet" href="../pagesCss/product-details.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- TOP BAR -->
+        <!-- 1. Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12 top-bar-left text-center text-md-start mb-2 mb-md-0">
+                        <i class="fa-solid fa-location-dot text-success me-1"></i>
+                        <span>Store Location: Lincoln, Nebraska, US</span>
+                    </div>
+                    <div class="col-md-6 col-12 top-bar-right text-center text-md-end">
+                        <div class="d-inline-flex align-items-center gap-3">
+                            <span class="top-bar-dropdown">Eng <i class="fa-solid fa-angle-down text-secondary"></i></span>
+                            <span class="top-bar-dropdown">USD <i class="fa-solid fa-angle-down text-secondary"></i></span>
+                            <span class="divider">|</span>
+                            <a href="sign-in.html">Sign In</a>
+                            <span class="divider">/</span>
+                            <a href="user-dashboard.html">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Middle Bar: Logo, Search, Cart -->
+        <div class="header-middle">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- LOGO -->
+                    <!-- Logo -->
+                    <div class="col-lg-3 col-md-4 col-12 text-center text-md-start mb-3 mb-md-0">
+                        <a href="index.html" class="logo">
+                            <i class="fa-solid fa-leaf"></i>
+                            Ecobazar
+                        </a>
+                    </div>
+                    <!-- SEARCH -->
+                    <!-- Search Bar -->
+                    <div class="col-lg-6 col-md-5 col-12 mb-3 mb-md-0">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search product...">
+                            <button type="button">Search</button>
+                        </div>
+                    </div>
+                    <!-- HEADER ICONS -->
+                    <!-- Wishlist & Cart Actions -->
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="header-actions">
+                            <a href="#" class="wishlist-icon-link" title="View Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="cart-badge">0</span>
+                            </a>
+                            <span class="border-end h-100 mx-2" style="border-color: var(--border) !important; min-height: 24px;"></span>
+                            <div class="cart-container">
+                                <a href="#" class="cart-icon-wrapper" title="View Cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span class="cart-badge">2</span>
+                                </a>
+                                <div class="cart-info d-none d-sm-block">
+                                    <span class="cart-label">Shopping cart:</span>
+                                    <span class="cart-total">$57.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <!-- 3. Responsive Bootstrap 5 Main Navigation -->
+        <div class="main-nav-container">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <!-- Mobile Hamburger Menu Button -->
+                    <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Nav items links -->
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                                    <li><a class="dropdown-item active" href="product-details.html">Product Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#">Cart Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <!-- Phone Contact info -->
+                        <div class="phone-contact">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>(205) 555-0114</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <h1>Chinese Cabbage</h1>
+                <div class="breadcrumb-nav">
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    <span class="divider">></span>
+                    <a href="#">Shop</a>
+                    <span class="divider">></span>
+                    <a href="#">Vegetables</a>
+                    <span class="divider">></span>
+                    <span class="active">Chinese Cabbage</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <!-- PRODUCT DETAILS -->
+    <main class="container my-5">
+        <div class="row g-4">
+            <!-- PRODUCT IMAGE -->
+            <!-- 1. Product Image Gallery -->
+            <div class="col-lg-6 col-12">
+                <div class="product-gallery">
+                    <!-- Vertical Thumbnails list -->
+                    <div class="thumbnail-list">
+                        <div class="thumbnail-item active" data-large-img="images/cabbage.png">
+                            <img src="../images/cabbage.png" alt="Cabbage main view">
+                        </div>
+                        <div class="thumbnail-item" data-large-img="images/cabbage_thumb1.png">
+                            <img src="../images/cabbage_thumb1.png" alt="Cabbage leaf detail view">
+                        </div>
+                        <div class="thumbnail-item" data-large-img="images/cabbage_thumb2.png">
+                            <img src="../images/cabbage_thumb2.png" alt="Cabbage double view">
+                        </div>
+                        <div class="thumbnail-item" data-large-img="images/cabbage_thumb3.png">
+                            <img src="../images/cabbage_thumb3.png" alt="Cabbage alternate view">
+                        </div>
+                    </div>
+                    <!-- Big Main Image display -->
+                    <div class="main-image-container">
+                        <img src="../images/cabbage.png" id="mainProductImage" alt="Chinese Cabbage Main">
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT INFORMATION -->
+            <!-- 2. Product Information Summary -->
+            <div class="col-lg-6 col-12">
+                <div class="product-info-summary">
+                    <!-- Title & Stock Status -->
+                    <div class="product-title-wrap">
+                        <h2 class="product-title">Chinese Cabbage</h2>
+                        <span class="stock-badge">In Stock</span>
+                    </div>
+
+                    <!-- Stars & reviews count -->
+                    <div class="rating-reviews-wrap">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="reviews-count">4 Customer Reviews</span>
+                    </div>
+
+                    <!-- Price layout (with original value and discount badge) -->
+                    <div class="product-price-wrap">
+                        <span class="product-price-current">$17.28</span>
+                        <span class="product-price-original">$24.00</span>
+                        <span class="discount-badge">28% OFF</span>
+                    </div>
+
+                    <!-- Short Description -->
+                    <p class="product-description-short">
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                        Nulla dui lorem, varius vitae euismod ut, porta id erat. Aliquam elementum elit egestas, 
+                        varius diam sed, sodales neque.
+                    </p>
+
+                    <!-- Purchase controls (Quantity selectors, Add to Cart, Wishlist) -->
+                    <div class="purchase-controls">
+                        <!-- QUANTITY -->
+                        <div class="quantity-selector">
+                            <button type="button" class="qty-btn" id="btnQtyMinus"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" class="qty-input" id="productQuantity" value="1" min="1" readonly>
+                            <button type="button" class="qty-btn" id="btnQtyPlus"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- ADD TO CART -->
+                        <button type="button" class="btn-green" id="btnAddToCart">
+                            <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                        </button>
+                        <button type="button" class="wishlist-btn" id="mainWishlistBtn" title="Add to Wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Product Meta details (Category, Tag) & Share links -->
+                    <ul class="product-meta-list">
+                        <li>
+                            <span class="meta-label">Category:</span>
+                            <strong>Vegetables</strong>
+                        </li>
+                        <li>
+                            <span class="meta-label">Tags:</span>
+                            <strong>Green, Organic, Healthy, Cabbage</strong>
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mt-2">
+                            <span class="meta-label">Share:</span>
+                            <div class="share-links">
+                                <a href="#" class="share-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="share-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="share-btn"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href="#" class="share-btn"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="details-tabs-section mt-5">
+            <!-- Navigation items -->
+            <ul class="tabs-nav">
+                <li class="tab-nav-item active" data-tab-target="tabDescription">Description</li>
+                <li class="tab-nav-item" data-tab-target="tabAdditional">Additional Information</li>
+                <li class="tab-nav-item" data-tab-target="tabFeedback">Customer Feedback (2)</li>
+            </ul>
+
+            <!-- Tab content panes -->
+            <div class="tabs-content">
+                <!-- PRODUCT DESCRIPTION -->
+                <!-- Pane 1: Description -->
+                <div class="tab-content-pane active" id="tabDescription">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-7 col-12">
+                            <p class="desc-text">
+                                Chinese cabbage (bok choy) is highly nutritious, low in calories, and an excellent source of essential vitamins and minerals. 
+                                It is rich in vitamin C, vitamin K, and beta-carotene, which are vital for maintaining good health, strong immune system functions, 
+                                and healthy skin and vision.
+                            </p>
+                            <p class="desc-text">
+                                Perfect for stir-fries, steaming, salads, and soups. Its mild, slightly sweet flavor blends beautifully with soy sauce, garlic, ginger, and sesame oils. 
+                                Sourced from fresh, organic, local farms daily.
+                            </p>
+                            <ul class="desc-bullet-list">
+                                <li>100% Organic & Non-GMO certified.</li>
+                                <li>Grown in pesticide-free soil conditions.</li>
+                                <li>Harvested fresh at peak ripeness.</li>
+                                <li>Packed and shipped under climate-controlled conditions.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="tab-img-wrapper">
+                                <img src="../images/chef.png" alt="Fresh Harvest Crop" class="img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADDITIONAL INFORMATION -->
+                <!-- Pane 2: Additional Info -->
+                <div class="tab-content-pane" id="tabAdditional">
+                    <div class="table-responsive">
+                        <table class="info-table">
+                            <tbody>
+                                <tr>
+                                    <td class="label-td">Weight</td>
+                                    <td class="value-td">1.0 kg (Approx 2-3 head bunches)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label-td">Color</td>
+                                    <td class="value-td">Vibrant Green stalks and White stems</td>
+                                </tr>
+                                <tr>
+                                    <td class="label-td">Type</td>
+                                    <td class="value-td">Organic Vegetables</td>
+                                </tr>
+                                <tr>
+                                    <td class="label-td">Brand</td>
+                                    <td class="value-td">EcoFarm Fresh Co.</td>
+                                </tr>
+                                <tr>
+                                    <td class="label-td">Storage</td>
+                                    <td class="value-td">Keep refrigerated at 4°C for up to 7 days</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- CUSTOMER FEEDBACK -->
+                <!-- Pane 3: Customer Feedback -->
+                <div class="tab-content-pane" id="tabFeedback">
+                    <div class="reviews-list">
+                        <!-- Review item 1 -->
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div>
+                                    <h5 class="reviewer-name">Kristin Watson</h5>
+                                    <div class="rating-stars mb-1">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">2 mins ago</span>
+                            </div>
+                            <p class="review-comment">
+                                Incredible quality! Cabbage arrived very fresh, green, and crisp. Will definitely purchase again.
+                            </p>
+                        </div>
+                        <!-- Review item 2 -->
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div>
+                                    <h5 class="reviewer-name">Jane Cooper</h5>
+                                    <div class="rating-stars mb-1">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star text-secondary"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">1 hour ago</span>
+                            </div>
+                            <p class="review-comment">
+                                Shipping was super fast and the cabbage tasted delicious in my vegetable stir-fry. High quality organic product.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RELATED PRODUCTS -->
+        <section class="related-products-section">
+            <div class="section-title-wrap">
+                <h3 class="section-title">Related Products</h3>
+            </div>
+            <div class="related-products-grid">
+                <!-- Card 1: Green Apple -->
+                <div class="product-card">
+                    <div class="product-card-img-wrap">
+                        <span class="card-discount-badge">Sale 30%</span>
+                        <button type="button" class="card-wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="../images/green_apple.png" alt="Green Apple">
+                    </div>
+                    <a href="#" class="product-card-title">Fresh Green Apple</a>
+                    <div class="product-card-footer">
+                        <div class="card-price-wrap">
+                            <span class="card-price-current">$14.99</span>
+                            <span class="card-price-original">$20.99</span>
+                        </div>
+                        <button type="button" class="card-cart-btn" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Cauliflower -->
+                <div class="product-card">
+                    <div class="product-card-img-wrap">
+                        <button type="button" class="card-wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="../images/cauliflower.png" alt="Cauliflower">
+                    </div>
+                    <a href="#" class="product-card-title">Organic Cauliflower</a>
+                    <div class="product-card-footer">
+                        <div class="card-price-wrap">
+                            <span class="card-price-current">$12.00</span>
+                        </div>
+                        <button type="button" class="card-cart-btn" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Capsicum -->
+                <div class="product-card">
+                    <div class="product-card-img-wrap">
+                        <button type="button" class="card-wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="../images/capsicum.png" alt="Green Capsicum">
+                    </div>
+                    <a href="#" class="product-card-title">Fresh Green Capsicum</a>
+                    <div class="product-card-footer">
+                        <div class="card-price-wrap">
+                            <span class="card-price-current">$9.00</span>
+                        </div>
+                        <button type="button" class="card-cart-btn" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Chili -->
+                <div class="product-card">
+                    <div class="product-card-img-wrap">
+                        <button type="button" class="card-wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="../images/chili.png" alt="Green Chili">
+                    </div>
+                    <a href="#" class="product-card-title">Organic Green Chili</a>
+                    <div class="product-card-footer">
+                        <div class="card-price-wrap">
+                            <span class="card-price-current">$15.00</span>
+                        </div>
+                        <button type="button" class="card-cart-btn" title="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- NEWSLETTER -->
+    <!-- Newsletter section banner -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-12 mb-3 mb-lg-0">
+                    <h4 class="newsletter-title">Subscribe our Newsletter</h4>
+                    <p class="newsletter-desc">Subscribe to get notifications about discounts, fresh arrivals, and weekly recipes.</p>
+                </div>
+                <div class="col-lg-4 col-md-7 col-12 mb-3 mb-md-0">
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="button">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-12">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- Main dark Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Info -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-leaf text-success"></i>
+                        Ecobazar
+                    </div>
+                    <p class="footer-desc">
+                        Online grocery store offering organic and fresh agricultural foods directly from local green farms.
+                    </p>
+                    <div class="footer-contact-info">
+                        <div>
+                            <span class="border-bottom-green">(205) 555-0114</span>
+                        </div>
+                        <div class="text-white">or</div>
+                        <div>
+                            <a href="mailto:support@ecobazar.com" class="border-bottom-green">support@ecobazar.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Column 2: My Account -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-col-title">My Account</h5>
+                    <ul class="footer-links">
+                        <li><a href="user-dashboard.html">Dashboard</a></li>
+                        <li><a href="user-dashboard.html">Order History</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Helps -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-col-title">Helps</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Proxy -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-col-title">Proxy</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Product Details</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Categories -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-col-title">Categories</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Fruit & Vegetables</a></li>
+                        <li><a href="#">Meat & Fish</a></li>
+                        <li><a href="#">Bread & Bakery</a></li>
+                        <li><a href="#">Beauty & Health</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom copyright and payment icons footer -->
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 text-center text-md-start mb-2 mb-md-0">
+                    <span>Ecobazar eCommerce © 2026. All Rights Reserved</span>
+                </div>
+                <div class="col-md-6 col-12 text-center text-md-end">
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                        <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fa-brands fa-cc-stripe" title="Stripe"></i>
+                        <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
+                        <i class="fa-brands fa-cc-amazon-pay" title="Amazon Pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Product Details page interactions script -->
+    <script src="js/product-details.js"></script>
+</body>
+</html>
