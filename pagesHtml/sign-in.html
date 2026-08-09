@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Ecobazar</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../pagesCss/style_.css">
+    <link rel="stylesheet" href="../pagesCss/sign-in.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+       
+        <!-- TOP BAR -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12 top-bar-left text-center text-md-start mb-2 mb-md-0">
+                        <i class="fa-solid fa-location-dot text-success me-1"></i>
+                        <span>Store Location: Lincoln, Nebraska, US</span>
+                    </div>
+                    <div class="col-md-6 col-12 top-bar-right text-center text-md-end">
+                        <div class="d-inline-flex align-items-center gap-3">
+                            <span class="top-bar-dropdown">Eng <i class="fa-solid fa-angle-down text-secondary"></i></span>
+                            <span class="top-bar-dropdown">USD <i class="fa-solid fa-angle-down text-secondary"></i></span>
+                            <span class="divider">|</span>
+                            <a href="sign-in.html">Sign In</a>
+                            <span class="divider">/</span>
+                            <a href="user-dashboard.html">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="container">
+                <div class="row align-items-center">
+                   
+                    <!-- LOGO -->
+                    <div class="col-lg-3 col-md-4 col-12 text-center text-md-start mb-3 mb-md-0">
+                        <a href="index.html" class="logo">
+                            <i class="fa-solid fa-leaf"></i>
+                            Ecobazar
+                        </a>
+                    </div>
+                    <!-- SEARCH -->
+                    <!-- Search Bar -->
+                    <div class="col-lg-6 col-md-5 col-12 mb-3 mb-md-0">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search product...">
+                            <button type="button">Search</button>
+                        </div>
+                    </div>
+                
+                    <!-- HEADER ICONS -->
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="header-actions">
+                            <a href="#" class="wishlist-icon-link" title="View Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="cart-badge">0</span>
+                            </a>
+                            <span class="border-end h-100 mx-2" style="border-color: var(--border) !important; min-height: 24px;"></span>
+                            <div class="cart-container">
+                                <a href="#" class="cart-icon-wrapper" title="View Cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span class="cart-badge">2</span>
+                                </a>
+                                <div class="cart-info d-none d-sm-block">
+                                    <span class="cart-label">Shopping cart:</span>
+                                    <span class="cart-total">$57.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <div class="main-nav-container">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                   
+                    <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                   
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                                    <li><a class="dropdown-item" href="product-details.html">Product Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#">Cart Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <!-- Phone Contact info -->
+                        <div class="phone-contact">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>(205) 555-0114</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <!-- =========================================================================
+         BREADCRUMB SECTION (Vegetable background banner matching mockups)
+         ========================================================================= -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <h1>Sign In</h1>
+                <div class="breadcrumb-nav">
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    <span class="divider">></span>
+                    <a href="#">Account</a>
+                    <span class="divider">></span>
+                    <span class="active">Login</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <!-- =========================================================================
+         SIGN IN FORM CONTENT (Centered White Card)
+         ========================================================================= -->
+    <main class="signin-page-bg">
+        <div class="container d-flex justify-content-center">
+            <div class="auth-card">
+                <h2 class="auth-title">Sign In</h2>
+                
+                <!-- Sign In Form (using semantic forms and bootstrap styling) -->
+                <form action="#" method="POST">
+                    <!-- Email input field -->
+                    <div class="form-group-custom">
+                        <label for="emailInput">Email</label>
+                        <input type="email" id="emailInput" placeholder="Email" required autocomplete="username">
+                    </div>
+
+                    <!-- Password input field -->
+                    <div class="form-group-custom">
+                        <label for="passwordInput">Password</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" id="passwordInput" placeholder="Password" required autocomplete="current-password">
+                            <!-- Visual eye icon for styling consistency -->
+                            <i class="fa-regular fa-eye password-toggle-icon"></i>
+                        </div>
+                    </div>
+
+                    <!-- Remember Me and Forgot Password Action row -->
+                    <div class="auth-action-row">
+                        <div class="form-check custom-form-check m-0">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">
+                                Remember me
+                            </label>
+                        </div>
+                        <a href="#" class="forgot-password-link">Forgot Password?</a>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-auth-submit">Login</button>
+                </form>
+
+                <!-- Navigation link redirecting to Dashboard page -->
+                <p class="auth-redirect-text">
+                    Don't have account? <a href="user-dashboard.html">Register / Go to Dashboard</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- =========================================================================
+         NEWSLETTER & FOOTER (Website Identity Shared on All Pages)
+         ========================================================================= -->
+    <!-- NEWSLETTER -->
+    <!-- Newsletter section banner -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-12 mb-3 mb-lg-0">
+                    <h4 class="newsletter-title">Subscribe our Newsletter</h4>
+                    <p class="newsletter-desc">Subscribe to get notifications about discounts, fresh arrivals, and weekly recipes.</p>
+                </div>
+                <div class="col-lg-4 col-md-7 col-12 mb-3 mb-md-0">
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="button">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-12">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- Main dark Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Info -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-leaf text-success"></i>
+                        Ecobazar
+                    </div>
+                    <p class="footer-desc">
+                        Online grocery store offering organic and fresh agricultural foods directly from local green farms.
+                    </p>
+                    <div class="footer-contact-info">
+                        <div>
+                            <span class="border-bottom-green">(205) 555-0114</span>
+                        </div>
+                        <div class="text-white">or</div>
+                        <div>
+                            <a href="mailto:support@ecobazar.com" class="border-bottom-green">support@ecobazar.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Column 2: My Account -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-col-title">My Account</h5>
+                    <ul class="footer-links">
+                        <li><a href="user-dashboard.html">Dashboard</a></li>
+                        <li><a href="user-dashboard.html">Order History</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Helps -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-col-title">Helps</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Proxy -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-col-title">Proxy</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Product Details</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Categories -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-col-title">Categories</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Fruit & Vegetables</a></li>
+                        <li><a href="#">Meat & Fish</a></li>
+                        <li><a href="#">Bread & Bakery</a></li>
+                        <li><a href="#">Beauty & Health</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom copyright and payment icons footer -->
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 text-center text-md-start mb-2 mb-md-0">
+                    <span>Ecobazar eCommerce © 2026. All Rights Reserved</span>
+                </div>
+                <div class="col-md-6 col-12 text-center text-md-end">
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                        <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fa-brands fa-cc-stripe" title="Stripe"></i>
+                        <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
+                        <i class="fa-brands fa-cc-amazon-pay" title="Amazon Pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper (No other JS included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
