@@ -54,14 +54,13 @@
     border-color: var(--green);
 }
 
-/* Password field with absolute eye icon */
 .password-input-wrapper {
     position: relative;
     width: 100%;
 }
 
 .password-input-wrapper input {
-    padding-right: 48px; /* space for eye icon */
+    padding-right: 48px; 
 }
 
 .password-toggle-icon {
@@ -78,7 +77,6 @@
     color: var(--dark);
 }
 
-/* Action row for checkbox and forgot password link */
 .auth-action-row {
     display: flex;
     justify-content: space-between;
@@ -97,7 +95,6 @@
     color: var(--green);
 }
 
-/* Auth Submit Button */
 .btn-auth-submit {
     width: 100%;
     background-color: var(--green);
@@ -133,7 +130,6 @@
     color: var(--green);
 }
 
-/* Responsive adjustments */
 @media (max-width: 575px) {
     .signin-page-bg {
         padding: 40px 0;
