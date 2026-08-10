@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar - Wishlist & Quick View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+            </div>
+            <div class="top-bar-right">
+                <select>
+                    <option>Eng</option>
+                </select>
+                <select>
+                    <option>USD</option>
+                </select>
+                <span class="divider">|</span>
+                <a href="#">Sign In</a> / <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-leaf logo-icon"></i>
+                <span>Ecobazar</span>
+            </a>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search">
+                <button type="button">Search</button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="wishlist-btn">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <div class="cart-btn">
+                    <div class="cart-icon-wrapper">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge">2</span>
+                    </div>
+                    <div class="cart-info">
+                        <span class="cart-label">Shopping cart:</span>
+                        <span class="cart-price">$57.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-content">
+            <ul class="nav-links">
+                <li class="active"><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-phone">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>(219) 555-0114</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumb-area">
+        <div class="container">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+            <i class="fa-solid fa-chevron-right separator"></i>
+            <span class="current">Wishlist</span>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">My Wishlist</h1>
+            
+            <div class="wishlist-table-wrapper">
+                <table class="wishlist-table">
+                    <thead>
+                        <tr>
+                            <th>PRODUCT</th>
+                            <th>PRICE</th>
+                            <th>STOCK STATUS</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="openQuickView('Green Capsicum', '$14.99', '$20.99', 'In Stock', 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=500&q=80')">
+                            <td class="product-cell">
+                                <img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=150&q=80" alt="Green Capsicum">
+                                <span>Green Capsicum</span>
+                            </td>
+                            <td class="price-cell">
+                                <span class="current-price">$14.99</span>
+                                <span class="old-price">$20.99</span>
+                            </td>
+                            <td><span class="stock-badge in-stock">In Stock</span></td>
+                            <td class="action-cell">
+                                <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                                <button class="btn-remove" onclick="event.stopPropagation()"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr onclick="openQuickView('Chinese Cabbage', '$17.28', '$48.00', 'In Stock', 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&q=80')">
+                            <td class="product-cell">
+                                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=150&q=80" alt="Chinese Cabbage">
+                                <span>Chinese Cabbage</span>
+                            </td>
+                            <td class="price-cell">
+                                <span class="current-price">$45.00</span>
+                            </td>
+                            <td><span class="stock-badge in-stock">In Stock</span></td>
+                            <td class="action-cell">
+                                <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                                <button class="btn-remove" onclick="event.stopPropagation()"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr onclick="openQuickView('Fresh Sujapuri Mango', '$09.00', '', 'Out of Stock', 'https://images.unsplash.com/photo-1553279768-865429fa0078?w=500&q=80')">
+                            <td class="product-cell">
+                                <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=150&q=80" alt="Fresh Sujapuri Mango">
+                                <span>Fresh Sujapuri Mango</span>
+                            </td>
+                            <td class="price-cell">
+                                <span class="current-price">$09.00</span>
+                            </td>
+                            <td><span class="stock-badge out-stock">Out of Stock</span></td>
+                            <td class="action-cell">
+                                <button class="btn-add-cart disabled" disabled onclick="event.stopPropagation()">Add to Cart</button>
+                                <button class="btn-remove" onclick="event.stopPropagation()"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="wishlist-share">
+                    <span>Share:</span>
+                    <a href="#" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon tw"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon pt"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#" class="social-icon ig"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="newsletter-section">
+        <div class="container newsletter-content">
+            <div class="newsletter-text">
+                <h3>Subcribe our Newsletter</h3>
+                <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+            </div>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="button">Subscribe</button>
+            </div>
+            <div class="newsletter-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col about-col">
+                <a href="#" class="logo light-logo">
+                    <i class="fa-solid fa-leaf logo-icon"></i>
+                    <span>Ecobazar</span>
+                </a>
+                <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                <div class="contact-links">
+                    <a href="tel:2195550114">(219) 555-0114</a> or <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Shoping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Helps</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Faqs</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Proxy</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Fruit & Vegetables</a></li>
+                    <li><a href="#">Meat & Fish</a></li>
+                    <li><a href="#">Bread & Bakery</a></li>
+                    <li><a href="#">Beauty & Health</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeQuickView()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-grid">
+                <div class="product-gallery">
+                    <div class="gallery-thumbs">
+                        <button class="thumb-nav"><i class="fa-solid fa-chevron-up"></i></button>
+                        <div class="thumb-item active" onclick="changeModalImage('https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&q=80', this)">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=100&q=80" alt="thumb">
+                        </div>
+                        <div class="thumb-item" onclick="changeModalImage('https://images.unsplash.com/photo-1587049352847-81a56d773cae?w=500&q=80', this)">
+                            <img src="https://images.unsplash.com/photo-1587049352847-81a56d773cae?w=100&q=80" alt="thumb">
+                        </div>
+                        <div class="thumb-item" onclick="changeModalImage('https://images.unsplash.com/photo-1628773822503-930a7eaecf80?w=500&q=80', this)">
+                            <img src="https://images.unsplash.com/photo-1628773822503-930a7eaecf80?w=100&q=80" alt="thumb">
+                        </div>
+                        <div class="thumb-item" onclick="changeModalImage('https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=500&q=80', this)">
+                            <img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=100&q=80" alt="thumb">
+                        </div>
+                        <button class="thumb-nav"><i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <div class="gallery-main">
+                        <img id="modalMainImg" src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&q=80" alt="Main Product Image">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="details-header">
+                        <h2 id="modalTitle">Chinese Cabbage</h2>
+                        <span class="stock-badge in-stock" id="modalStock">In Stock</span>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="review-count">4 Review</span>
+                        <span class="sku">• SKU: 2,51,394</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="old-price" id="modalOldPrice">$48.00</span>
+                        <span class="current-price" id="modalCurrentPrice">$17.28</span>
+                        <span class="discount-badge">64% Off</span>
+                    </div>
+                    <div class="brand-share-row">
+                        <div class="brand-info">
+                            <span>Brand:</span>
+                            <span class="brand-name"><i class="fa-solid fa-leaf"></i> farmary</span>
+                        </div>
+                        <div class="share-info">
+                            <span>Share item:</span>
+                            <div class="share-icons">
+                                <a href="#" class="active-social"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="description">
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla facilisi.
+                    </p>
+                    <div class="purchase-row">
+                        <div class="quantity-control">
+                            <button onclick="updateQuantity(-1)">-</button>
+                            <span id="qtyVal">5</span>
+                            <button onclick="updateQuantity(1)">+</button>
+                        </div>
+                        <button class="btn-add-cart-large">
+                            Add to Cart <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <button class="btn-wishlist-modal"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="meta-row">
+                        <p><strong>Category:</strong> Vegetables</p>
+                        <p><strong>Tag:</strong> Vegetables Healthy <u>Chinese</u> Cabbage green cabbage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

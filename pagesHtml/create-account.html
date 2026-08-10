@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar - Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="create-account.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+            </div>
+            <div class="top-bar-right">
+                <select><option>Eng</option></select>
+                <select><option>USD</option></select>
+                <span class="divider">|</span>
+                <a href="#">Sign In</a> / <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-leaf logo-icon"></i>
+                <span>Ecobazar</span>
+            </a>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search">
+                <button type="button">Search</button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="wishlist-btn"><i class="fa-regular fa-heart"></i></a>
+                <div class="cart-btn">
+                    <div class="cart-icon-wrapper">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge">2</span>
+                    </div>
+                    <div class="cart-info">
+                        <span class="cart-label">Shopping cart:</span>
+                        <span class="cart-price">$57.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-content">
+            <ul class="nav-links">
+                <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li class="active"><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-phone">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>(219) 555-0114</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="breadcrumb-banner">
+        <div class="container">
+            <ul class="breadcrumb-links">
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><i class="fa-solid fa-chevron-right separator"></i></li>
+                <li><a href="#">Account</a></li>
+                <li><i class="fa-solid fa-chevron-right separator"></i></li>
+                <li class="current">Create Account</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="account-section">
+        <div class="container flex-center">
+            <div class="account-card">
+                <h2>Create Account</h2>
+                <form class="account-form" action="#" method="POST">
+                    
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-group password-group">
+                        <input type="password" placeholder="Password" required>
+                        <i class="fa-regular fa-eye toggle-password"></i>
+                    </div>
+
+                    <div class="input-group password-group">
+                        <input type="password" placeholder="Confirm Password" required>
+                        <i class="fa-regular fa-eye toggle-password"></i>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Accept all terms & Conditions</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Create Account</button>
+
+                    <p class="form-footer-text">
+                        Already have account <a href="#">Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container newsletter-content">
+            <div class="newsletter-text">
+                <h3>Subcribe our Newsletter</h3>
+                <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus et feugiat felis.</p>
+            </div>
+            <div class="newsletter-action">
+                <div class="newsletter-input-wrap">
+                    <input type="email" placeholder="Your email address">
+                    <button type="button">Subscribe</button>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-leaf logo-icon"></i>
+                    <span>Ecobazar</span>
+                </a>
+                <p class="brand-desc">Morbi cursus porttitur enim lobortis molestie. Duis dui orci, vulputate eget sem ac, facilisis mollis nisl.</p>
+                <div class="contact-info">
+                    <span class="phone-link">(219) 555-0114</span>
+                    <span class="or-text">or</span>
+                    <a href="mailto:Proxy@gmail.com" class="email-link">Proxy@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Helps</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Faqs</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Proxy</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Fruit & Vegetables</a></li>
+                    <li><a href="#">Meat & Fish</a></li>
+                    <li><a href="#">Bread & Bakery</a></li>
+                    <li><a href="#">Beauty & Health</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>Ecobazar eCommerce © 2026. All Rights Reserved</p>
+                <div class="payment-methods">
+                    <i class="fa-brands fa-apple-pay"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-discover"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <span class="secure-pay"><i class="fa-solid fa-lock"></i> Secure Payment</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
