@@ -12,7 +12,6 @@
     --font-family: 'Poppins', sans-serif;
 }
 
-/* Base resets & styles */
 body {
     font-family: var(--font-family);
     color: #2b3e42;
@@ -37,7 +36,6 @@ img {
     height: auto;
 }
 
-/* Top Bar Styling */
 .top-bar {
     background-color: #2d2d2d;
     color: #b3b3b3;
@@ -82,7 +80,6 @@ img {
     color: var(--white);
 }
 
-/* Header Middle Area */
 .header-middle {
     background-color: var(--white);
     padding: 22px 0;
@@ -274,7 +271,6 @@ img {
     font-size: 20px;
 }
 
-/* Breadcrumb Section */
 .breadcrumb-section {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/banner.png') no-repeat center center;
     background-size: cover;
@@ -322,7 +318,6 @@ img {
     font-weight: 500;
 }
 
-/* Newsletter Section */
 .newsletter-section {
     background-color: var(--light);
     padding: 40px 0;
@@ -406,7 +401,6 @@ img {
     color: var(--white);
 }
 
-/* Footer Styling */
 .main-footer {
     background-color: var(--dark);
     color: #999999;
@@ -510,7 +504,6 @@ img {
     color: var(--white);
 }
 
-/* Shared UI Components */
 .btn-green {
     background-color: var(--green);
     color: var(--white) !important;
@@ -537,7 +530,6 @@ img {
     transform: translateY(0);
 }
 
-/* Custom Checkbox and Forms styling for style consistency */
 .custom-form-check {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -563,8 +555,6 @@ img {
     border-color: var(--green);
     box-shadow: 0 0 0 0.25rem rgba(0, 178, 7, 0.15);
 }
-
-/* Responsive adjustments */
 @media (max-width: 991px) {
     .header-middle {
         padding: 15px 0;

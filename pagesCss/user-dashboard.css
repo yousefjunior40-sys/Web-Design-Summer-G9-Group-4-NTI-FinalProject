@@ -4,8 +4,6 @@
     background-color: var(--light);
     padding: 60px 0;
 }
-
-/* Sidebar Navigation */
 .dashboard-sidebar {
     background-color: var(--white);
     border: 1px solid var(--border);
@@ -69,7 +67,6 @@
     color: var(--white);
 }
 
-/* Right Content Area */
 .profile-card {
     background-color: var(--white);
     border: 1px solid var(--border);
@@ -79,7 +76,6 @@
     margin-bottom: 30px;
 }
 
-/* Left portion of profile card: avatar and user header */
 .profile-user-summary {
     display: flex;
     flex-direction: column;
@@ -136,7 +132,6 @@
     text-decoration: underline;
 }
 
-/* Right portion: profile field details */
 .profile-details-grid {
     padding-left: 20px;
     display: flex;
@@ -165,8 +160,6 @@
     color: var(--dark);
     font-weight: 500;
 }
-
-/* Order History section */
 .dashboard-section-title {
     font-size: 22px;
     font-weight: 600;
@@ -211,7 +204,6 @@
     border-bottom: none;
 }
 
-/* Status Badges */
 .status-badge {
     display: inline-block;
     padding: 4px 10px;
@@ -242,7 +234,6 @@
     text-decoration: underline;
 }
 
-/* Responsive adjustments */
 @media (max-width: 767px) {
     .profile-user-summary {
         border-right: none;
