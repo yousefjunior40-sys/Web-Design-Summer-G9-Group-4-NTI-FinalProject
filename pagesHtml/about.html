@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EcoBazar</title>
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/pagesCss/about.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <small><i class="fa-solid fa-location-dot me-1"></i> Store Location: Mansoura, Egypt</small>
+    <div>
+        <a href="" class="top-link">Eng <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <a href="" class="top-link ms-3">USD <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <span class="mx-2">|</span>
+        <a href="" class="top-link">Sign In</a>
+        <span class="mx-1">/</span>
+        <a href="" class="top-link">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="container">
+    <div class="row align-items-center py-3">
+      <div class="col-lg-3 col-6">
+        <a class="logo text-decoration-none" href="#">
+          <i class="fa-solid fa-leaf"></i> Eco<span>bazar</span>
+        </a>
+      </div>
+
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search">
+          <button id="searchButton">Search</button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6 text-end">
+        <div class="header-icons">
+          <a href="wishlist.html" class="wishlist-link">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-count">0</span>
+          </a>
+          <span class="divider"></span>
+          <a href="shopping.html" class="cart-link">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">0</span>
+          <div class="cart-text d-none d-md-inline">
+            <small>Shopping cart:</small>
+            <strong>$00.00</strong>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg shop-nav">
+  <div class="container">
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pages/product-details.html">Product Details</a></li>
+            <li><a class="dropdown-item" href="pages/wishlist.html">Wishlist</a></li>
+            <li><a class="dropdown-item" href="#">Cart Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="pages/faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact Us</a></li>
+      </ul>
+      <div class="phone"><i class="fa-solid fa-phone"></i> (219) 555-0114</div>
+    </div>
+  </div>
+</nav>
+
+  <!-- Top Banner (Breadcrumb) -->
+  <div class="top-banner d-flex align-items-center">
+    <div class="container d-flex align-items-center gap-2">
+      <a href="#" class="text-white text-decoration-none"><i class="fa-solid fa-house-chimney"></i></a>
+      <i class="fa-solid fa-chevron-right text-white-50 fs-7"></i>
+      <a href="#" class="text-decoration-none text-success">About</a>
+    </div>
+  </div>
+<!-- PART 1 & 2: TRUSTED ORGANIC FOOD STORE -->
+<section class="py-5">
+  <div class="container">
+    <!-- Top Row -->
+    <div class="row align-items-center gy-4 mb-5">
+      <div class="col-md-6">
+        <h2 class="fw-bold">100% Trusted<br>Organic Food Store</h2>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-4x3 bg-light rounded-4">
+          <img src="/images/farmer1.png" alt="" class="object-fit-cover rounded-4">
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="row align-items-center gy-4">
+      <div class="col-md-6 order-2 order-md-1">
+        <div class="ratio ratio-4x3 bg-light rounded-4">
+          <img src="/images/Image2.png" alt="" class="object-fit-cover rounded-4">
+        </div>
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <h2 class="fw-bold">100% Trusted<br>Organic Food Store</h2>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac.</p>
+        <div class="row g-3">
+          <div class="col-6 d-flex align-items-center gap-2">
+            <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
+            <div>
+              <h6 class="mb-0 fw-bold">100% Organic food</h6>
+              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center gap-2">
+            <div class="icon-circle"><i class="fa-solid fa-headset"></i></div>
+            <div>
+              <h6 class="mb-0 fw-bold">Great Support 24/7</h6>
+              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center gap-2">
+            <div class="icon-circle"><i class="fa-solid fa-star"></i></div>
+            <div>
+              <h6 class="mb-0 fw-bold">Customer Feedback</h6>
+              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center gap-2">
+            <div class="icon-circle"><i class="fa-solid fa-bag-shopping"></i></div>
+            <div>
+              <h6 class="mb-0 fw-bold">100% Secure Payment</h6>
+              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center gap-2">
+            <div class="icon-circle"><i class="fa-solid fa-truck"></i></div>
+            <div>
+              <h6 class="mb-0 fw-bold">Free Shipping</h6>
+              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center gap-2">
+            <div class="icon-circle"><i class="fa-solid fa-box"></i></div>
+            <div>
+              <h6 class="mb-0 fw-bold">100% Organic Food</h6>
+              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART 3: WE DELIVERED & OUR TEAM -->
+<section class="py-5">
+  <!-- We Delivered -->
+  <div class="container mb-5">
+    <div class="row align-items-center gy-4">
+      <div class="col-md-6">
+        <h2 class="fw-bold">We Delivered, You<br>Enjoy Your Order.</h2>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula in nunc varius sagittis.</p>
+        <div class="mb-3">
+          <div class="mb-1"><i class="fa-solid fa-check check-icon me-2"></i><small class="text-muted">Lorem ipsum dolor sit amet.</small></div>
+          <div class="mb-1"><i class="fa-solid fa-check check-icon me-2"></i><small class="text-muted">Lorem ipsum dolor sit amet, consectetur.</small></div>
+          <div class="mb-3"><i class="fa-solid fa-check check-icon me-2"></i><small class="text-muted">Lorem ipsum dolor sit amet.</small></div>
+        </div>
+        <button class="btn btn-success rounded-pill px-4">Shop Now <i class="fa-solid fa-arrow-right ms-1"></i></button>
+      </div>
+      <div class="col-md-6">
+     <div class="ratio ratio-4x3 bg-white rounded-4 overflow-hidden p-3">
+     <img src="/images/deliveryguy.png" alt="Delivery Guy" class="w-100 h-100 object-fit-contain rounded-4">
+      </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Our Awesome Team Section (Static with Visual Arrows) -->
+<section class="py-5 bg-body-tertiary w-100">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Our Awesome Team</h2>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="team-wrapper position-relative px-md-5">
+      <!-- Visual Left Arrow (Disabled) -->
+      <button class="position-absolute top-50 start-0 translate-middle-y btn btn-white bg-white border rounded-circle shadow-sm d-flex align-items-center justify-content-center z-3" type="button" disabled style="width: 40px; height: 40px; cursor: default;">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <!-- Static Team Members Grid -->
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="ratio ratio-1x1 bg-white">
+              <img src="/images/member1.jpg" alt="" class="card-img-top object-fit-cover">
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold mb-0">Jenny Wilson</h6>
+              <small class="text-muted">Lorem ipsum</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="ratio ratio-1x1 bg-white">
+              <img src="/images/member2.jpg" alt="" class="card-img-top object-fit-cover">
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold mb-0">Jane Cooper</h6>
+              <small class="text-muted">Lorem ipsum</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="ratio ratio-1x1 bg-white">
+              <img src="/images/member3.jpg" alt="" class="card-img-top object-fit-cover">
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold mb-0">Cody Fisher</h6>
+              <small class="text-muted">Lorem ipsum</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="ratio ratio-1x1 bg-white">
+              <img src="/images/member4.jpg" alt="" class="card-img-top object-fit-cover">
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold mb-0">Robert Fox</h6>
+              <small class="text-muted">Lorem ipsum</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Right Arrow (Disabled) -->
+      <button class="position-absolute top-50 end-0 translate-middle-y btn btn-white bg-white border rounded-circle shadow-sm d-flex align-items-center justify-content-center z-3" type="button" disabled style="width: 40px; height: 40px; cursor: default;">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- PART 4: TESTIMONIAL & BRANDS -->
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold mb-0">Client Testimonial</h2>
+      <div>
+        <button class="btn btn-outline-secondary rounded-circle" data-bs-target="#testiCarousel" data-bs-slide="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="btn btn-success rounded-circle" data-bs-target="#testiCarousel" data-bs-slide="next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- Testimonials Carousel -->
+    <div id="testiCarousel" class="carousel slide mb-5">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="/images/Testimonial Card1.png" alt="" class="object-fit-cover rounded-3"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="/images/Testimonial Card2.png" alt="" class="object-fit-cover rounded-3"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="/images/Testimonial Card3.png" alt="" class="object-fit-cover rounded-3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="" alt="" class="object-fit-cover rounded-3"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="" alt="" class="object-fit-cover rounded-3"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="" alt="" class="object-fit-cover rounded-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!-- Brands Section -->
+<div class="row align-items-center justify-content-center pt-5 mt-4 border-top text-center gy-3 gx-2">
+  <div class="col-4 col-sm-2">
+    <img src="/images/brand1.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
+  </div>
+  <div class="col-4 col-sm-2">
+    <img src="/images/brand 2.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
+  </div>
+  <div class="col-4 col-sm-2">
+    <img src="/images/brand 3.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
+  </div>
+  <div class="col-4 col-sm-2">
+    <img src="/images/brand 4.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
+  </div>
+  <div class="col-4 col-sm-2">
+    <img src="/images/brand 5.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
+  </div>
+  <div class="col-4 col-sm-2">
+    <img src="/images/brand 6.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- END of my page content -->
+<!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div>
+      <h3>Subscribe our Newsletter</h3>
+      <p>Subscribe to our newsletter and receive updates about our products.</p>
+    </div>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe</button>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="logo text-decoration-none text-white" href="#"><i class="fa-solid fa-leaf"></i> Eco<span>bazar</span></a>
+        <p class="mt-3">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui.</p>
+        <strong>(219) 555-0114</strong> &nbsp; <span>or</span> &nbsp; <strong>proxy@example.com</strong>
+      </div>
+      <div class="col-6 col-lg-2"><h6>My Account</h6><a href="#">My Account</a><a href="#">Order History</a><a href="#">Shopping Cart</a><a href="#">Wishlist</a></div>
+      <div class="col-6 col-lg-2"><h6>Helps</h6><a href="#">Contact</a><a href="#">FAQs</a><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="col-6 col-lg-2"><h6>Proxy</h6><a href="#">About</a><a href="#">Shop</a><a href="#">Product</a><a href="#">Track Order</a></div>
+      <div class="col-6 col-lg-2"><h6>Categories</h6><a href="#">Fruit & Vegetables</a><a href="#">Meat & Fish</a><a href="#">Bread & Bakery</a><a href="#">Beauty & Health</a></div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between flex-wrap gap-2">
+      <small>© 2024 EcoBazar. All Rights Reserved.</small>
+      <small><i class="fa-brands fa-cc-visa fa-2x me-2"></i><i class="fa-brands fa-cc-mastercard fa-2x"></i></small>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
