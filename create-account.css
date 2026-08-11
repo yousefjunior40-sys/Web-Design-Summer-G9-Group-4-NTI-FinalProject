@@ -193,49 +193,53 @@ a {
     font-weight: 600;
 }
 
-.main-nav {
+.shop-nav {
     background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 12px 0;
+    padding: 8px 0;
 }
 
-.nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 28px;
-}
-
-.nav-links li a {
+.shop-nav .nav-link {
+    color: #999999 !important;
     font-size: 13px;
-    color: #999999;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+    padding: 8px 15px !important;
+    transition: color 0.2s ease;
 }
 
-.nav-links li a i {
-    font-size: 10px;
+.shop-nav .nav-link:hover,
+.shop-nav .nav-link.show,
+.shop-nav .nav-item.active .nav-link {
+    color: #00b207 !important;
 }
 
-.nav-links li.active a,
-.nav-links li a:hover {
-    color: #00b207;
+.shop-nav .dropdown-menu {
+    background-color: #262626;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-top: 8px;
 }
 
-.nav-phone {
+.shop-nav .dropdown-item {
+    color: #ccc;
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+.shop-nav .dropdown-item:hover {
+    background-color: #00b207;
+    color: #fff;
+}
+
+.shop-nav .phone {
+    color: #ffffff;
+    font-size: 13px;
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 13px;
-    color: #ffffff;
     font-weight: 500;
+}
+
+.shop-nav .phone i {
+    color: #00b207;
 }
 
 .breadcrumb-banner {
@@ -469,96 +473,46 @@ a {
     color: #ffffff;
 }
 
-.main-footer {
+.footer {
     background-color: #1a1a1a;
     color: #999999;
-    padding-top: 50px;
+    padding: 50px 0 20px;
+    font-size: 13px;
 }
 
-.footer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #2e2e2e;
-}
-
-.footer-logo {
+.footer h6 {
     color: #ffffff;
-    margin-bottom: 12px;
-}
-
-.brand-desc {
-    font-size: 12px;
-    line-height: 1.6;
+    font-weight: 600;
     margin-bottom: 16px;
-    color: #808080;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 12px;
-}
-
-.phone-link, .email-link {
-    color: #ffffff;
-    font-weight: 500;
-    border-bottom: 2px solid #00b207;
-    padding-bottom: 2px;
-}
-
-.footer-col h4 {
-    color: #ffffff;
     font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 16px;
 }
 
-.footer-col ul {
-    list-style: none;
-}
-
-.footer-col ul li {
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-    font-size: 12px;
+.footer a {
+    display: block;
     color: #808080;
+    margin-bottom: 8px;
+    font-size: 13px;
 }
 
-.footer-col ul li a:hover {
+.footer a:hover {
+    color: #00b207;
+}
+
+.footer p {
+    color: #808080;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footer strong {
     color: #ffffff;
 }
 
-.footer-bottom {
-    background-color: #121212;
-    padding: 16px 0;
+.footer hr {
+    border-color: #333333;
+    margin: 30px 0 20px;
 }
 
-.footer-bottom-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    color: #666666;
-}
-
-.payment-methods {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 18px;
-    color: #b3b3b3;
-}
-
-.secure-pay {
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+.footer small {
     color: #808080;
-    margin-left: 6px;
 }

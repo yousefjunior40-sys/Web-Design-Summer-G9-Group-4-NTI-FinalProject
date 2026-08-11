@@ -160,39 +160,52 @@ a {
     font-weight: 600;
 }
 
-.main-nav {
+.shop-nav {
     background-color: #1a1a1a;
-    color: #fff;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
-.nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-.nav-links li a {
+.shop-nav .nav-link {
+    color: #999 !important;
     font-size: 13px;
-    color: #999;
+    padding: 8px 15px !important;
+    transition: color 0.2s ease;
 }
 
-.nav-links li.active a {
-    color: #00b207;
+.shop-nav .nav-link:hover,
+.shop-nav .nav-link.show,
+.shop-nav .nav-item.active .nav-link {
+    color: #00b207 !important;
 }
 
-.nav-phone {
+.shop-nav .dropdown-menu {
+    background-color: #262626;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.shop-nav .dropdown-item {
+    color: #ccc;
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+.shop-nav .dropdown-item:hover {
+    background-color: #00b207;
+    color: #fff;
+}
+
+.shop-nav .phone {
+    color: #fff;
+    font-size: 13px;
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 13px;
-    color: #fff;
+}
+
+.shop-nav .phone i {
+    color: #00b207;
 }
 
 .products-grid-section {
