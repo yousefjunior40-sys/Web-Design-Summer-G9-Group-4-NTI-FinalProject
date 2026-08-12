@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoBazar - Organic Shop</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="pagesCss/style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <small><i class="fa-solid fa-location-dot me-1"></i> Store Location: Mansoura, Egypt</small>
+    <div>
+        <a href="" class="top-link">Eng <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <a href="" class="top-link ms-3">USD <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <span class="mx-2">|</span>
+        <a href="pagesHtml/sign-in.html" class="top-link">Sign In</a>
+        <span class="mx-1">/</span>
+        <a href="pagesHtml/create-account.html" class="top-link">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="container">
+    <div class="row align-items-center py-3">
+      <div class="col-lg-3 col-6">
+        <a class="logo text-decoration-none" href="#">
+          <i class="fa-solid fa-leaf"></i> Eco<span>bazar</span>
+        </a>
+      </div>
+
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search">
+          <button id="searchButton">Search</button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6 text-end">
+        <div class="header-icons">
+          <a href="pagesHtml/wishlist.html" class="wishlist-link">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-count">0</span>
+          </a>
+          <span class="divider"></span>
+          <a href="pagesHtml/checkout.html" class="cart-link">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">0</span>
+          <div class="cart-text d-none d-md-inline">
+            <small>Shopping cart:</small>
+            <strong>$00.00</strong>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg shop-nav">
+  <div class="container">
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="pagesHtml/shop.html">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pagesHtml/product-details.html">Product Details</a></li>
+            <li><a class="dropdown-item" href="pagesHtml/wishlist.html">Wishlist</a></li>
+            <li><a class="dropdown-item" href="#">Cart Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="pagesHtml/faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagesHtml/about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagesHtml/contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="../project/404.html">404</a></li>
+
+      </ul>
+      <div class="phone"><i class="fa-solid fa-phone"></i> (219) 555-0114</div>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4">
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-main">
+      <div class="hero-content">
+        <p class="small-title">Fresh & Healthy</p>
+        <h1>Organic Food</h1>
+        <p>Sale up to <span>48% OFF</span></p>
+        <a href="#" class="btn green-btn">Shop now <i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-side">
+      <div class="side-banner sale-banner">
+        <div>
+          <small>SUMMER SALE</small>
+          <h3>75% OFF</h3>
+          <p>Only this week</p>
+          <a href="#">Shop Now →</a>
+        </div>
+      </div>
+
+      <div class="side-banner deal-banner">
+        <div>
+          <small>BEST DEALS</small>
+          <h3>Special Products</h3>
+          <p>Deal of the Month</p>
+          <a href="#">Shop Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features shadow-sm">
+    <div><i class="fa-solid fa-truck"></i><strong>Free Shipping</strong><small>Free shipping on all orders</small></div>
+    <div><i class="fa-solid fa-headset"></i><strong>Customer Support 24/7</strong><small>Instant access to support</small></div>
+    <div><i class="fa-solid fa-lock"></i><strong>100% Secure Payment</strong><small>Your payment is safe</small></div>
+    <div><i class="fa-solid fa-box"></i><strong>Money-Back Guarantee</strong><small>30 days money back</small></div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Popular Categories</h2>
+      <a href="#">View All →</a>
+    </div>
+
+    <div class="row g-2">
+      <div class="col-6 col-sm-4 col-md-2"><div class="category-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD3KuMJ4sbRJC-JIdbPP6Ctpocw3I8PfojslDi9M5KYA&s=10"><b>Fresh Fruit</b></div></div>
+      <div class="col-6 col-sm-4 col-md-2"><div class="category-card"><img src="https://i0.wp.com/fruitlinkco.com/home/wp-content/uploads/2023/02/000.png?fit=550%2C376"><b>Fresh Vegetables</b></div></div>
+      <div class="col-6 col-sm-4 col-md-2"><div class="category-card"><img src="images/image 1.png"><b>Meat & Fish</b></div></div>
+      <div class="col-6 col-sm-4 col-md-2"><div class="category-card"><img src="images/image 2.png"><b>Snacks</b></div></div>
+      <div class="col-6 col-sm-4 col-md-2"><div class="category-card"><img src="images/image 3.png"><b>Beverages</b></div></div>
+      <div class="col-6 col-sm-4 col-md-2"><div class="category-card"><img src="images/image 4.png"><b>Beauty & Health</b></div></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Popular Products</h2>
+      <a href="#">View All →</a>
+    </div>
+    <div class="row g-0 product-grid">
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><span class="sale-tag">SALE 50%</span><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKbNT-N-AMoM4P7tmqGusaJtcFtkBpRJ5daez0fqcEeA&s=10"><small>Fresh Fruit</small><h6>Green Apple</h6><b>$14.99</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://img.magnific.com/premium-photo/orange-with-green-leaf-isolated-white-background_1305153-52.jpg?semt=ais_hybrid&w=740&q=80"><small>Fresh Fruit</small><h6>Fresh Orange</h6><b>$20.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://thumbs.dreamstime.com/b/ripe-red-tomatoes-sliced-piece-isolated-white-background-clipping-path-high-quality-image-photo-stacking-method-fresh-451675077.jpg"><small>Vegetables</small><h6>Red Tomatoes</h6><b>$12.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrBbWq7sPnU7v_3bPRJImpqPXpl9ohN2zIixCS8qKMw&s=10"><small>Vegetables</small><h6>Carrots</h6><b>$9.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://i.pinimg.com/736x/5a/fd/62/5afd6204c44130bb98a9e28273101917.jpg"><small>Vegetables</small><h6>Cucumber</h6><b>$14.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://thumbs.dreamstime.com/b/red-yellow-green-bell-pepper-isolated-white-background-465207837.jpg"><small>Vegetables</small><h6>Color Pepper</h6><b>$14.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNERS -->
+  <section class="row g-3 promo-row">
+    <div class="col-md-4"><div class="promo promo-blue"><h6>BEST DEALS</h6><h2>Sale of the Month</h2><p>Up to 56% OFF</p><div class="promo-banner">
+    <div class="countdown">
+        <div>
+            <span id="days">00</span>
+            <small>Days</small>
+        </div>
+        <div>
+            <span id="hours">00</span>
+            <small>Hours</small>
+        </div>
+        <div>
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+        </div>
+        <div>
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+        </div>
+    </div>
+    <a href="#">Shop Now →</a></div></div></div> 
+    <div class="col-md-4"><div class="promo promo-dark"><h6>BEST DEALS</h6><h2>Low-Fat Meat</h2><p>Starting at $7.99</p><a href="#">Shop Now →</a></div></div>
+    <div class="col-md-4"><div class="promo promo-yellow"><h6>BEST DEALS</h6><h2>100% Fresh Fruit</h2><p>Up to 20% OFF</p><a href="#">Shop Now →</a></div></div>
+  </section>
+
+  <!-- HOT DEALS -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Hot Deals</h2>
+      <a href="#">View All →</a>
+    </div>
+    <div class="row g-0 product-grid">
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card hot"><span class="sale-tag">SALE 50%</span><img src="https://i.pinimg.com/736x/0a/72/7d/0a727dd7e79f0668a68801d9ee21a404.jpg"><h6>Watermelon</h6><b>$12.00</b><div class="stars">★★★★★</div><button class="add-cart">ADD TO CART</button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUT48RWoN_UIIXI29gK_x71jRzjWATzw1gWPH5d8Pnqw&s=10"><h6>Chinese Cabbage</h6><b>$12.00</b><div class="stars">★★★★★</div><button class="add-cart">ADD TO CART</button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><img src="https://thumbs.dreamstime.com/b/generated-image-432353878.jpg"><h6>Green Lettuce</h6><b>$9.00</b><div class="stars">★★★★★</div><button class="add-cart">ADD TO CART</button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><img src="https://media.istockphoto.com/id/1412854156/photo/strawberries-isolated-strawberry-whole-and-a-half-on-white-background-strawberry-slice-with.jpg?s=612x612&w=0&k=20&c=sg8D6YofX0K9og_ugF4R50QrPAKQUvHn5vJGfr-7Zk4="><h6>Strawberries</h6><b>$14.00</b><div class="stars">★★★★★</div><button class="add-cart">ADD TO CART</button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><img src="https://img.magnific.com/premium-photo/fresh-sweet-corn-isolated-white-background_183587-659.jpg"><h6>Sweet Corn</h6><b>$12.00</b><div class="stars">★★★★★</div><button class="add-cart">ADD TO CART</button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><img src="https://static.vecteezy.com/system/resources/previews/052/342/500/non_2x/fresh-onion-with-slice-on-transparent-background-free-png.png"><h6>Red Onion</h6><b>$8.00</b><div class="stars">★★★★★</div><button class="add-cart">ADD TO CART</button></div></div>
+    </div>
+  </section>
+
+  <!-- WIDE BANNER -->
+  <section class="wide-banner">
+    <div>
+      <small>SUMMER SALE</small>
+      <div class="sale">
+        <span class="sale-tag">37%</span> 
+        <span class="off">OFF</span>
+      </div>
+      <p>Free shipping on all orders over $50</p>
+      <a href="#" class="btn green-btn">Shop Now →</a>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Featured Products</h2>
+      <a href="#">View All →</a>
+    </div>
+    <div class="row g-0 product-grid">
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://media.istockphoto.com/id/479903950/photo/new-potato-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=Npy46xC15Vipx35PDek1Xh3gW3VsI8HWieHEES4HLNY="><h6>Fresh Potatoes</h6><b>$14.99</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://t3.ftcdn.net/jpg/06/14/23/96/360_F_614239677_svNzoNei5fQBCp1n1zbKZvqSLDhiOVYM.jpg"><h6>Grapes</h6><b>$20.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRP-tm6f3X_7NrQeZTa5wi_jcb592oJ63-JTnia3FZLAoFz9dIxS8GQew&s=10"><h6>Mango</h6><b>$12.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMdqQFlyj_11R90HfT257o0PoMzFU2UmSsxtokCVceUA&s=10"><h6>Bananas</h6><b>$9.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://media.istockphoto.com/id/2271029688/photo/fresh-peaches-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ptM-6FVz1GkAGa88e-Q0DbgKYeZ7okug2kw-n88WSEU="><h6>Organic Peach</h6><b>$14.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="product-card"><button class="heart"><i class="fa-regular fa-heart"></i></button><a href="pagesHtml/quickview.html" class="eye"><i class="fa-regular fa-eye"></i></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdviKqkLpIamXO3IF7TDQxCHL64Kt4mRAE3vUKCP1mnQ&s=10"><h6>Kiwi</h6><b>$18.00</b><div class="stars">★★★★★</div><button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button></div></div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="section">
+    <div class="section-title">
+        <h2>Latest News</h2>
+        <a href="#">View All →</a>
+    </div>
+    <div class="news-container">
+        <article class="news-card">
+            <div class="news-image">
+                <img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=800&q=80">
+
+                <div class="news-date">
+                    <strong>18</strong>
+                    <span>NOV</span>
+                </div>
+            </div>
+
+            <div class="news-content">
+                <div class="news-info">
+                    <span><i class="fa-solid fa-tag"></i> Food</span>
+                    <span><i class="fa-regular fa-user"></i> By Admin</span>
+                    <span><i class="fa-regular fa-comment"></i> 65 Comments</span>
+                </div>
+                <h5>
+                    Curabitur porttitor orci eget neque accumsan venenatis.
+                </h5>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <div class="news-image">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80">
+
+                <div class="news-date">
+                    <strong>29</strong>
+                    <span>JAN</span>
+                </div>
+            </div>
+
+            <div class="news-content">
+                <div class="news-info">
+                    <span><i class="fa-solid fa-tag"></i> Food</span>
+                    <span><i class="fa-regular fa-user"></i> By Admin</span>
+                    <span><i class="fa-regular fa-comment"></i> 40 Comments</span>
+                </div>
+                <h5>
+                    Eget lobortis lorem pharetra.
+                </h5>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+
+            </div>
+        </article>
+
+
+        <article class="news-card">
+            <div class="news-image">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80">
+
+                <div class="news-date">
+                    <strong>21</strong>
+                    <span>MAY</span>
+                </div>
+            </div>
+
+            <div class="news-content">
+                <div class="news-info">
+                    <span><i class="fa-solid fa-tag"></i> Food</span>
+                    <span><i class="fa-regular fa-user"></i> By Admin</span>
+                    <span><i class="fa-regular fa-comment"></i> 25 Comments</span>
+                </div>
+                <h5>
+                    Maecenas blandit risus elementum.
+                </h5>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials py-4">
+    <div class="container">
+        <div class="section-title d-flex justify-content-between align-items-center mb-4">
+            <h2>Client Testimonials</h2>
+            <!-- ARROWS -->
+            <div class="testimonial-arrows">
+                <button id="prevBtn" type="button">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button id="nextBtn" type="button">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    <div class="testimonial-slider-wrapper">
+    <div class="row g-3 flex-nowrap" id="testimonialsTrack">
+
+        <div class="col-12 col-md-4 slider-card">
+            <div class="testimonial p-4 border rounded bg-white shadow-sm">
+                <i class="fa-solid fa-quote-left quote-icon text-success mb-2"></i>
+                <p>Pellentesque eu nibh eget mauris congue mattis...</p>
+                <strong>Robert Fox</strong>
+                <div class="stars text-warning">★★★★★</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 slider-card">
+            <div class="testimonial p-4 border rounded bg-white shadow-sm">
+                <i class="fa-solid fa-quote-left quote-icon text-success mb-2"></i>
+                <p>Pellentesque eu nibh eget mauris congue mattis...</p>
+                <strong>Dianne Russell</strong>
+                <div class="stars text-warning">★★★★★</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 slider-card">
+            <div class="testimonial p-4 border rounded bg-white shadow-sm">
+                <i class="fa-solid fa-quote-left quote-icon text-success mb-2"></i>
+                <p>Pellentesque eu nibh eget mauris congue mattis...</p>
+                <strong>Eleanor Pena</strong>
+                <div class="stars text-warning">★★★★★</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 slider-card">
+            <div class="testimonial p-4 border rounded bg-white shadow-sm">
+                <i class="fa-solid fa-quote-left quote-icon text-success mb-2"></i>
+                <p>Extra card to test sliding behavior smoothly.</p>
+                <strong>Jane Doe</strong>
+                <div class="stars text-warning">★★★★★</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+    <!-- INSTAGRAM -->
+<section class="instagram">
+    <div class="container">
+
+        <!-- Brand Logos -->
+        <div class="brand-logos d-flex justify-content-between align-items-center">
+
+            <span class="brand steps">steps</span>
+            <span class="brand mango">Mango</span>
+            <span class="brand food">food1</span>
+            <span class="brand food-bold">food2</span>
+            <span class="brand book">book-off</span>
+
+            <span class="brand g-series">
+                <i class="fa-solid fa-g"></i> Series
+            </span>
+
+        </div>
+
+        <h3>Follow us on Instagram</h3>
+
+        <!-- Instagram Slider -->
+        <div class="instagram-slider">
+
+            <!-- Previous -->
+            <button class="instagram-arrow instagram-prev" id="instagramPrev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <!-- Images -->
+            <div class="instagram-wrapper">
+                <div class="instagram-track" id="instagramTrack">
+                    <!-- IMAGE 1 -->
+                    <div class="instagram-slide">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScf5A-DusGijVSBBzPPe6zK6TRu_OmhylhtNOqqVbvTtlCyU_ROq2YiBog&s=10"
+                                 alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- IMAGE 2 -->
+                    <div class="instagram-slide">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="images/Instagram Post (1).png"
+                                 alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- IMAGE 3 -->
+                    <div class="instagram-slide">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="images/Instagram Post (2).png"
+                                 alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- IMAGE 4 -->
+                    <div class="instagram-slide">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="images/Instagram Post (3).png"
+                                 alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- IMAGE 6 -->
+                    <div class="instagram-slide">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="images/Instagram Post.png"
+                                 alt="Instagram">
+                            <div class="instagram-overlay">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next -->
+            <button class="instagram-arrow instagram-next" id="instagramNext">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Dots -->
+        <div class="instagram-dots" id="instagramDots"></div>
+    </div>
+</section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div>
+      <h3>Subscribe our Newsletter</h3>
+      <p>Subscribe to our newsletter and receive updates about our products.</p>
+    </div>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe</button>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="logo text-decoration-none text-white" href="#"><i class="fa-solid fa-leaf"></i> Eco<span>bazar</span></a>
+        <p class="mt-3">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui.</p>
+        <strong>(219) 555-0114</strong> &nbsp; <span>or</span> &nbsp; <strong>proxy@example.com</strong>
+      </div>
+      <div class="col-6 col-lg-2"><h6>My Account</h6><a href="#">My Account</a><a href="#">Order History</a><a href="#">Shopping Cart</a><a href="#">Wishlist</a></div>
+      <div class="col-6 col-lg-2"><h6>Helps</h6><a href="#">Contact</a><a href="#">FAQs</a><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="col-6 col-lg-2"><h6>Proxy</h6><a href="#">About</a><a href="#">Shop</a><a href="#">Product</a><a href="#">Track Order</a></div>
+      <div class="col-6 col-lg-2"><h6>Categories</h6><a href="#">Fruit & Vegetables</a><a href="#">Meat & Fish</a><a href="#">Bread & Bakery</a><a href="#">Beauty & Health</a></div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between flex-wrap gap-2">
+      <small>© 2024 EcoBazar. All Rights Reserved.</small>
+      <small><i class="fa-brands fa-cc-visa fa-2x me-2"></i><i class="fa-brands fa-cc-mastercard fa-2x"></i></small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

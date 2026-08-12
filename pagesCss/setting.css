@@ -5,7 +5,8 @@
     --border: #e6e6e6;
 }
 
-* {
+* 
+{
     box-sizing: border-box;
 }
 
@@ -24,6 +25,8 @@ img {
     max-width: 100%;
 }
 
+/*TOP BAR*/
+
 .top-bar {
     font-size: 12px;
     color: #666;
@@ -41,6 +44,8 @@ img {
 .top-link:hover{
     color: var(--green);
 }
+
+/*HEADER*/
 
 .main-header {
     background: #fff;
@@ -86,6 +91,15 @@ img {
     padding: 0 25px;
 }
 
+.wishlist-link {
+    color: #222;
+    text-decoration: none;
+}
+
+.wishlist-link:hover {
+    color: var(--green);
+}
+
 .header-icons {
     display: flex;
     justify-content: flex-end;
@@ -99,6 +113,22 @@ img {
     border-left: 1px solid #ddd;
 }
 
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #222;
+}
+
+.cart-link:hover {
+    color: var(--green);
+}
+
+.cart-link i {
+    font-size: 22px;
+}
+
 .cart-text {
     font-size: 12px;
     text-align: left;
@@ -110,6 +140,17 @@ img {
     display: block;
 }
 
+.cart-text small {
+    color: #777;
+    font-size: 12px;
+}
+
+.cart-text strong {
+    color: #222;
+    font-size: 12px;
+}
+
+/*NAVBAR*/
 
 .shop-nav {
     background: #fff;
@@ -125,13 +166,42 @@ img {
     color: #00b207 !important;
 }
 
-.shop-nav .nav-link:hover {
-    background: #222;
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    margin-top: 0;
 }
 
 .phone {
     color: #1a1a1a;
     font-size: 13px;
+}
+
+.page-banner {
+  height: 120px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../images/green_leaves.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.breadcrumb {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 30px;
+  padding-top: 45px;
+}
+
+.breadcrumb span {
+  margin: 0 15px;
+}
+
+.breadcrumb strong {
+  color: var(--green);
+  font-weight: 700;
 }
 
 /****** NAVIGATION ******/
@@ -190,6 +260,19 @@ img {
     color: #00b207;
 }
 
+.nav-list li a {
+    color: #555 !important;
+    text-decoration: none !important;
+}
+
+.nav-list li a:hover {
+    color: #00b207 !important;
+}
+
+.nav-list li.active a {
+    color: #00b207 !important;
+}
+
 /******* MAIN CONTENT **********/
 .main-content {
     flex: 1;
@@ -201,15 +284,16 @@ img {
 
 .card {
     background-color: #fff;
-    border: 1px solid #eaeaea;
+    border: 2px solid #c9c8c8;
     border-radius: 8px;
     padding: 30px;
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 25px;
+    text-align: center;
     color: #111;
 }
 
@@ -242,6 +326,11 @@ img {
 .input-group select:focus,
 .active-input {
     border-color: #00b207 !important;
+}
+
+.input-group input:hover, 
+.input-group select:hover {
+    border-color: #00b207;
 }
 
 .form-row { display: grid; gap: 20px; }

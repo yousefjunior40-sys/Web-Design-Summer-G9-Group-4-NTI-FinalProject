@@ -58,6 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
             isValid = false;
         }
 
+        // CHECK PAYMENT METHOD //
+        const selectedPaymentInput = document.querySelector('input[name="payment_method"]:checked');
+        if (!selectedPaymentInput) {
+        isValid = false;
+        }
 
         if (!isValid) {
             alert('Please complete all the required fields.');
@@ -68,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectedPayment = document.querySelector('input[name="payment_method"]:checked').parentNode.textContent.trim();
 
         // SUCCSSESFUL PAYMENT //
-        alert(`🎉 ${selectedPayment}\: $84.00  TOTAL PAYMENT`);
+        alert(`${selectedPayment}\: $84.00  TOTAL PAYMENT`);
+        window.location.href = 'order.html';
     });
 });

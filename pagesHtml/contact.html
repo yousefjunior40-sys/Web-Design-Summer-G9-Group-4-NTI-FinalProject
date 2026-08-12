@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../pagesCss/contact.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <small><i class="fa-solid fa-location-dot me-1"></i> Store Location: Mansoura, Egypt</small>
+    <div>
+        <a href="" class="top-link">Eng <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <a href="" class="top-link ms-3">USD <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <span class="mx-2">|</span>
+        <a href="../pagesHtml/sign-in.html" class="top-link">Sign In</a>
+        <span class="mx-1">/</span>
+        <a href="../pagesHtml/create-account.html" class="top-link">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="container">
+    <div class="row align-items-center py-3">
+      <div class="col-lg-3 col-6">
+        <a class="logo text-decoration-none" href="#">
+          <i class="fa-solid fa-leaf"></i> Eco<span>bazar</span>
+        </a>
+      </div>
+
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search">
+          <button id="searchButton">Search</button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6 text-end">
+        <div class="header-icons">
+          <a href="wishlist.html" class="wishlist-link">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-count">0</span>
+          </a>
+          <span class="divider"></span>
+          <a href="checkout.html" class="cart-link">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">0</span>
+          <div class="cart-text d-none d-md-inline">
+            <small>Shopping cart:</small>
+            <strong>$00.00</strong>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg shop-nav">
+  <div class="container">
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="shop.html">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pagesHtml/product-details.html">Product Details</a></li>
+            <li><a class="dropdown-item" href="../pagesHtml/wishlist.html">Wishlist</a></li>
+            <li><a class="dropdown-item" href="#">Cart Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../pagesHtml/faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pagesHtml/about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="phone"><i class="fa-solid fa-phone"></i> (219) 555-0114</div>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER -->
+
+<section class="page-banner">
+    <div class="container">
+        <div class="breadcrumb">
+            <i class="fa-solid fa-house"></i>
+            <span>›</span>
+            <strong>Contact Us</strong>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="row justify-content-center g-4">
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-5">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                            2715 Ash Dr. San Jose,
+                            South Dakota 83475
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>
+                            Proxy@gmail.com<br>
+                            Help.proxy@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>
+                            (219) 555-0114<br>
+                            (164) 333-0487
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+
+            <div class="col-lg-6 col-md-7">
+                <div class="contact-form">
+                    <h2>Just Say Hello!</h2>
+                    <p>
+                        Do you fancy saying hi to me or you want to get
+                        started with your project and you need my help?
+                        Feel free to contact me.
+                    </p>
+
+
+                    <form id="contactForm">
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Template Cookie">
+                            </div>
+
+                            <div class="col-md-6">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="zakirsoft@gmail.com">
+                            </div>
+
+                        </div>
+                        <input
+                            type="text"
+                            class="form-control mt-2"
+                            placeholder="Hello!">
+
+                        <textarea
+                            class="form-control mt-2"
+                            rows="5"
+                            placeholder="Subjects"></textarea>
+
+                        <button
+                            type="submit"
+                            class="send-btn mt-3">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- MAP -->
+<section class="map-section">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.30931314629!2d31.424039271096515!3d31.041379605570796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2z2KfZhNmF2YbYtdmI2LHYqdiMINin2YTZhdmG2LXZiNix2KkgKNmC2LPZhSAyKdiMINin2YTZhdmG2LXZiNix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNiv2YLZh9mE2YrYqQ!5e0!3m2!1sar!2seg!4v1786299930050!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" frameborder="0"></iframe>
+</section>
+
+<!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div>
+      <h3>Subscribe our Newsletter</h3>
+      <p>Subscribe to our newsletter and receive updates about our products.</p>
+    </div>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe</button>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="logo text-decoration-none text-white" href="#"><i class="fa-solid fa-leaf"></i> Eco<span>bazar</span></a>
+        <p class="mt-3">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui.</p>
+        <strong>(219) 555-0114</strong> &nbsp; <span>or</span> &nbsp; <strong>proxy@example.com</strong>
+      </div>
+      <div class="col-6 col-lg-2"><h6>My Account</h6><a href="#">My Account</a><a href="#">Order History</a><a href="#">Shopping Cart</a><a href="#">Wishlist</a></div>
+      <div class="col-6 col-lg-2"><h6>Helps</h6><a href="#">Contact</a><a href="#">FAQs</a><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="col-6 col-lg-2"><h6>Proxy</h6><a href="#">About</a><a href="#">Shop</a><a href="#">Product</a><a href="#">Track Order</a></div>
+      <div class="col-6 col-lg-2"><h6>Categories</h6><a href="#">Fruit & Vegetables</a><a href="#">Meat & Fish</a><a href="#">Bread & Bakery</a><a href="#">Beauty & Health</a></div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between flex-wrap gap-2">
+      <small>© 2024 EcoBazar. All Rights Reserved.</small>
+      <small><i class="fa-brands fa-cc-visa fa-2x me-2"></i><i class="fa-brands fa-cc-mastercard fa-2x"></i></small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script  src="../js/contact.js"></script>
+</body>
+</html>

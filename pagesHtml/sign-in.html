@@ -7,112 +7,88 @@
     <title>Sign In | Ecobazar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../pagesCss/style_.css">
+    <link rel="stylesheet" href="../pagesCss/style1.css">
     <link rel="stylesheet" href="../pagesCss/sign-in.css">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-12 top-bar-left text-center text-md-start mb-2 mb-md-0">
-                        <i class="fa-solid fa-location-dot text-success me-1"></i>
-                        <span>Store Location: Lincoln, Nebraska, US</span>
-                    </div>
-                    <div class="col-md-6 col-12 top-bar-right text-center text-md-end">
-                        <div class="d-inline-flex align-items-center gap-3">
-                            <span class="top-bar-dropdown">Eng <i class="fa-solid fa-angle-down text-secondary"></i></span>
-                            <span class="top-bar-dropdown">USD <i class="fa-solid fa-angle-down text-secondary"></i></span>
-                            <span class="divider">|</span>
-                            <a href="sign-in.html">Sign In</a>
-                            <span class="divider">/</span>
-                            <a href="user-dashboard.html">Dashboard</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+     <div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <small><i class="fa-solid fa-location-dot me-1"></i> Store Location: Mansoura, Egypt</small>
+    <div>
+        <a href="" class="top-link">Eng <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <a href="" class="top-link ms-3">USD <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <span class="mx-2">|</span>
+        <a href="../pagesHtml/sign-in.html" class="top-link">Sign In</a>
+        <span class="mx-1">/</span>
+        <a href="../pagesHtml/create-account.html" class="top-link">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="container">
+    <div class="row align-items-center py-3">
+      <div class="col-lg-3 col-6">
+        <a class="logo text-decoration-none" href="#">
+          <i class="fa-solid fa-leaf"></i> Eco<span>bazar</span>
+        </a>
+      </div>
+
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search">
+          <button id="searchButton">Search</button>
         </div>
-        <div class="header-middle">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-4 col-12 text-center text-md-start mb-3 mb-md-0">
-                        <a href="index.html" class="logo">
-                            <i class="fa-solid fa-leaf"></i>
-                            Ecobazar
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-5 col-12 mb-3 mb-md-0">
-                        <div class="search-box">
-                            <input type="text" placeholder="Search product...">
-                            <button type="button">Search</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="header-actions">
-                            <a href="#" class="wishlist-icon-link" title="View Wishlist">
-                                <i class="fa-regular fa-heart"></i>
-                                <span class="cart-badge">0</span>
-                            </a>
-                            <span class="border-end h-100 mx-2" style="border-color: var(--border) !important; min-height: 24px;"></span>
-                            <div class="cart-container">
-                                <a href="#" class="cart-icon-wrapper" title="View Cart">
-                                    <i class="fa-solid fa-bag-shopping"></i>
-                                    <span class="cart-badge">2</span>
-                                </a>
-                                <div class="cart-info d-none d-sm-block">
-                                    <span class="cart-label">Shopping cart:</span>
-                                    <span class="cart-total">$57.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+
+      <div class="col-lg-3 col-6 text-end">
+        <div class="header-icons">
+          <a href="wishlist.html" class="wishlist-link">
+          <i class="fa-regular fa-heart"></i>
+          </a>
+          <span class="divider"></span>
+          <a href="checkout.html" class="cart-link">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <div class="cart-text d-none d-md-inline">
+            <small>Shopping cart:</small>
+            <strong>$00.00</strong>
+          </div>
+          </a>
         </div>
-        <div class="main-nav-container">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                   
-                    <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mainNavbar">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Shop
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="shopDropdown">
-                                    <li><a class="dropdown-item" href="product-details.html">Product Details</a></li>
-                                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
-                                    <li><a class="dropdown-item" href="#">Cart Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">pages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                        <div class="phone-contact">
-                            <i class="fa-solid fa-phone-volume"></i>
-                            <span>(205) 555-0114</span>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg shop-nav">
+  <div class="container">
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="shop.html">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pagesHtml/product-details.html">Product Details</a></li>
+            <li><a class="dropdown-item" href="../pagesHtml/wishlist.html">Wishlist</a></li>
+            <li><a class="dropdown-item" href="#">Cart Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../pagesHtml/faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pagesHtml/about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="phone"><i class="fa-solid fa-phone"></i> (219) 555-0114</div>
+    </div>
+  </div>
+</nav>
     <section class="breadcrumb-section">
         <div class="container">
             <div class="breadcrumb-wrapper">
@@ -120,7 +96,7 @@
                 <div class="breadcrumb-nav">
                     <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
                     <span class="divider">></span>
-                    <a href="#">Account</a>
+                    <a href="create-account.html">Account</a>
                     <span class="divider">></span>
                     <span class="active">Login</span>
                 </div>
@@ -160,109 +136,54 @@
             </div>
         </div>
     </main>
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-12 mb-3 mb-lg-0">
-                    <h4 class="newsletter-title">Subscribe our Newsletter</h4>
-                    <p class="newsletter-desc">Subscribe to get notifications about discounts, fresh arrivals, and weekly recipes.</p>
-                </div>
-                <div class="col-lg-4 col-md-7 col-12 mb-3 mb-md-0">
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="button">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-5 col-12">
-                    <div class="social-icons">
-                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-pinterest-p"></i></a>
-                        <a href="#" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
+    <section class="newsletter-section py-4" style="background-color: #f7f7f7;">
+    <div class="container" style="max-width: 1140px;">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-5 col-12 mb-3 mb-lg-0">
+                <h4 class="newsletter-title fw-bold mb-1" style="color: #1a1a1a; font-size: 20px;">Subscribe our Newsletter</h4>
+                <p class="newsletter-desc text-muted small mb-0">Subscribe to get notifications about discounts, fresh arrivals, and weekly recipes.</p>
             </div>
-        </div>
-    </section>
-    <footer class="main-footer">
-        <div class="container">
-            <div class="row g-4">
-                <!-- Column 1: Info -->
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="footer-logo">
-                        <i class="fa-solid fa-leaf text-success"></i>
-                        Ecobazar
-                    </div>
-                    <p class="footer-desc">
-                        Online grocery store offering organic and fresh agricultural foods directly from local green farms.
-                    </p>
-                    <div class="footer-contact-info">
-                        <div>
-                            <span class="border-bottom-green">(205) 555-0114</span>
-                        </div>
-                        <div class="text-white">or</div>
-                        <div>
-                            <a href="mailto:support@ecobazar.com" class="border-bottom-green">support@ecobazar.com</a>
-                        </div>
-                    </div>
+            
+            <div class="col-lg-7 col-12 d-flex align-items-center justify-content-lg-end gap-3">
+                <div class="newsletter-form d-flex" style="max-width: 440px; width: 100%;">
+                    <input type="email" placeholder="Your email address" class="form-control px-3" style="border-radius: 46px 0 0 46px; border: 1px solid #e6e6e6; height: 45px; outline: none;">
+                    <button type="button" class="btn text-white px-4" style="background-color: #00b207; border-radius: 0 46px 46px 0; font-weight: 600; white-space: nowrap; height: 45px;">Subscribe</button>
                 </div>
-                <div class="col-lg-2 col-md-6 col-6">
-                    <h5 class="footer-col-title">My Account</h5>
-                    <ul class="footer-links">
-                        <li><a href="user-dashboard.html">Dashboard</a></li>
-                        <li><a href="user-dashboard.html">Order History</a></li>
-                        <li><a href="#">Shopping Cart</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 col-6">
-                    <h5 class="footer-col-title">Helps</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 col-6">
-                    <h5 class="footer-col-title">Proxy</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Product Details</a></li>
-                        <li><a href="#">Track Order</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-6">
-                    <h5 class="footer-col-title">Categories</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Fruit & Vegetables</a></li>
-                        <li><a href="#">Meat & Fish</a></li>
-                        <li><a href="#">Bread & Bakery</a></li>
-                        <li><a href="#">Beauty & Health</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="bottom-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-12 text-center text-md-start mb-2 mb-md-0">
-                    <span>Ecobazar eCommerce © 2026. All Rights Reserved</span>
-                </div>
-                <div class="col-md-6 col-12 text-center text-md-end">
-                    <div class="payment-icons">
-                        <i class="fa-brands fa-cc-visa" title="Visa"></i>
-                        <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
-                        <i class="fa-brands fa-cc-stripe" title="Stripe"></i>
-                        <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
-                        <i class="fa-brands fa-cc-amazon-pay" title="Amazon Pay"></i>
-                    </div>
+                
+                <div class="social-icons d-flex gap-2">
+                    <a href="https://www.facebook.com/" class="social-icon-btn text-secondary d-flex align-items-center justify-content-center text-decoration-none" style="width: 36px; height: 36px;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" class="social-icon-btn text-secondary d-flex align-items-center justify-content-center text-decoration-none" style="width: 36px; height: 36px;"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.pinterest.com/" class="social-icon-btn text-secondary d-flex align-items-center justify-content-center text-decoration-none" style="width: 36px; height: 36px;"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="https://www.instagram.com/" class="social-icon-btn text-secondary d-flex align-items-center justify-content-center text-decoration-none" style="width: 36px; height: 36px;"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="logo text-decoration-none text-white" href="#"><i class="fa-solid fa-leaf"></i> Eco<span>bazar</span></a>
+        <p class="mt-3">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui.</p>
+        <strong>(219) 555-0114</strong> &nbsp; <span>or</span> &nbsp; <strong>proxy@example.com</strong>
+      </div>
+      <div class="col-6 col-lg-2"><h6>My Account</h6><a href="#">My Account</a><a href="#">Order History</a><a href="#">Shopping Cart</a><a href="#">Wishlist</a></div>
+      <div class="col-6 col-lg-2"><h6>Helps</h6><a href="#">Contact</a><a href="#">FAQs</a><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="col-6 col-lg-2"><h6>Proxy</h6><a href="#">About</a><a href="#">Shop</a><a href="#">Product</a><a href="#">Track Order</a></div>
+      <div class="col-6 col-lg-2"><h6>Categories</h6><a href="#">Fruit & Vegetables</a><a href="#">Meat & Fish</a><a href="#">Bread & Bakery</a><a href="#">Beauty & Health</a></div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between flex-wrap gap-2">
+      <small>© 2024 EcoBazar. All Rights Reserved.</small>
+      <small><i class="fa-brands fa-cc-visa fa-2x me-2"></i><i class="fa-brands fa-cc-mastercard fa-2x"></i></small>
+    </div>
+  </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

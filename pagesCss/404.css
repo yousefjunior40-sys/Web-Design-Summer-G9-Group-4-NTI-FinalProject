@@ -1,7 +1,7 @@
 /* Top Banner */
 .top-banner {
   height: 120px;
-  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('/images/breadcumb.jpg');
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('../images/breadcumb.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -189,12 +189,34 @@ img {
     background: #222;
 }
 
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    margin-top: 0;
+}
+
 .phone {
     color: #fff;
     font-size: 13px;
 }
 
 /*NEWSLETTER*/
+
+.newsletter-section .container {
+  max-width: 1140px;
+}
+
+
+.newsletter-form input:focus {
+  box-shadow: none;
+  border-color: #00b207 !important;
+}
+
+.social-icon-btn:hover {
+  color: #00b207 !important;
+}
 
 .newsletter {
     background: #f5f5f5;

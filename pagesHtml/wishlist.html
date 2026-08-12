@@ -8,73 +8,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="wishlist.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../pagesCss/wishlist.css">
 </head>
 <body>
 
     <div class="top-bar">
-        <div class="container top-bar-content">
-            <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
-            </div>
-            <div class="top-bar-right">
-                <select>
-                    <option>Eng</option>
-                </select>
-                <select>
-                    <option>USD</option>
-                </select>
-                <span class="divider">|</span>
-                <a href="#">Sign In</a> / <a href="#">Sign Up</a>
-            </div>
-        </div>
+  <div class="container d-flex justify-content-between align-items-center">
+    <small><i class="fa-solid fa-location-dot me-1"></i> Store Location: Mansoura, Egypt</small>
+    <div>
+        <a href="" class="top-link">Eng <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <a href="" class="top-link ms-3">USD <i class="fa-solid fa-chevron-down ms-1"></i></a>
+        <span class="mx-2">|</span>
+        <a href="sign-in.html" class="top-link">Sign In</a>
+        <span class="mx-1">/</span>
+        <a href="create-account.html" class="top-link">Sign Up</a>
     </div>
+  </div>
+</div>
 
     <header class="main-header">
-        <div class="container header-content">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-leaf logo-icon"></i>
-                <span>Ecobazar</span>
-            </a>
-            <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" placeholder="Search">
-                <button type="button">Search</button>
-            </div>
-            <div class="header-actions">
-                <a href="#" class="wishlist-btn">
-                    <i class="fa-regular fa-heart"></i>
-                </a>
-                <div class="cart-btn">
-                    <div class="cart-icon-wrapper">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <span class="cart-badge">2</span>
-                    </div>
-                    <div class="cart-info">
-                        <span class="cart-label">Shopping cart:</span>
-                        <span class="cart-price">$57.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+  <div class="container">
+    <div class="row align-items-center py-3">
+      <div class="col-lg-3 col-6">
+        <a class="logo text-decoration-none" href="#">
+          <i class="fa-solid fa-leaf"></i> Eco<span>bazar</span>
+        </a>
+      </div>
 
-    <nav class="main-nav">
-        <div class="container nav-content">
-            <ul class="nav-links">
-                <li class="active"><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <div class="nav-phone">
-                <i class="fa-solid fa-phone-volume"></i>
-                <span>(219) 555-0114</span>
-            </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search">
+          <button id="searchButton">Search</button>
         </div>
+      </div>
+
+      <div class="col-lg-3 col-6 text-end">
+        <div class="header-icons">
+          <a href="wishlist.html" class="wishlist-link">
+          <i class="fa-regular fa-heart"></i>
+          </a>
+          <span class="divider"></span>
+          <a href="checkout.html" class="cart-link">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <div class="cart-text d-none d-md-inline">
+            <small>Shopping cart:</small>
+            <strong>$00.00</strong>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <nav class="navbar navbar-expand-lg shop-nav">
+      <div class="container">
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="shop.html">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pagesHtml/product-details.html">Product Details</a></li>
+                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                <li><a class="dropdown-item" href="#">Cart Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../pagesHtml/faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pagesHtml/about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pagesHtml/contact.html">Contact Us</a></li>
+          </ul>
+          <div class="phone"><i class="fa-solid fa-phone"></i> (219) 555-0114</div>
+        </div>
+      </div>
     </nav>
 
     <div class="breadcrumb-area">
@@ -167,63 +180,33 @@
                 <button type="button">Subscribe</button>
             </div>
             <div class="newsletter-socials">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
     </section>
 
-    <footer class="main-footer">
-        <div class="container footer-content">
-            <div class="footer-col about-col">
-                <a href="#" class="logo light-logo">
-                    <i class="fa-solid fa-leaf logo-icon"></i>
-                    <span>Ecobazar</span>
-                </a>
-                <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
-                <div class="contact-links">
-                    <a href="tel:2195550114">(219) 555-0114</a> or <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h4>My Account</h4>
-                <ul>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Order History</a></li>
-                    <li><a href="#">Shoping Cart</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Helps</h4>
-                <ul>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Faqs</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Proxy</h4>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Track Order</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Categories</h4>
-                <ul>
-                    <li><a href="#">Fruit & Vegetables</a></li>
-                    <li><a href="#">Meat & Fish</a></li>
-                    <li><a href="#">Bread & Bakery</a></li>
-                    <li><a href="#">Beauty & Health</a></li>
-                </ul>
-            </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a class="logo text-decoration-none text-white" href="#"><i class="fa-solid fa-leaf"></i> Eco<span>bazar</span></a>
+            <p class="mt-3">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui.</p>
+            <strong>(219) 555-0114</strong> &nbsp; <span>or</span> &nbsp; <strong>proxy@example.com</strong>
+          </div>
+          <div class="col-6 col-lg-2"><h6>My Account</h6><a href="#">My Account</a><a href="#">Order History</a><a href="#">Shopping Cart</a><a href="#">Wishlist</a></div>
+          <div class="col-6 col-lg-2"><h6>Helps</h6><a href="#">Contact</a><a href="#">FAQs</a><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+          <div class="col-6 col-lg-2"><h6>Proxy</h6><a href="#">About</a><a href="#">Shop</a><a href="#">Product</a><a href="#">Track Order</a></div>
+          <div class="col-6 col-lg-2"><h6>Categories</h6><a href="#">Fruit & Vegetables</a><a href="#">Meat & Fish</a><a href="#">Bread & Bakery</a><a href="#">Beauty & Health</a></div>
         </div>
+        <hr>
+        <div class="d-flex justify-content-between flex-wrap gap-2">
+          <small>©️ 2024 EcoBazar. All Rights Reserved.</small>
+          <small><i class="fa-brands fa-cc-visa fa-2x me-2"></i><i class="fa-brands fa-cc-mastercard fa-2x"></i></small>
+        </div>
+      </div>
     </footer>
 
     <div class="modal-overlay" id="quickViewModal">
@@ -310,6 +293,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/wishlist.js"></script>
 </body>
 </html>

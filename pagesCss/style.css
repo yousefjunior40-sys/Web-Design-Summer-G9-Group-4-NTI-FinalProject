@@ -1,0 +1,1271 @@
+:root {
+    --green: #00b207;
+    --dark: #1a1a1a;
+    --light: #f7f7f7;
+    --border: #e6e6e6;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*TOP BAR*/
+
+.top-bar {
+    font-size: 12px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+.top-link{
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.top-link:hover{
+    color: var(--green);
+}
+
+/*HEADER*/
+
+.main-header {
+    background: #fff;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #222;
+}
+
+.logo i,
+.logo span {
+    color: var(--green);
+}
+
+.search-box {
+    height: 42px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.search-box i {
+    margin-left: 14px;
+    color: #555;
+}
+
+.search-box input {
+    border: 0;
+    outline: 0;
+    flex: 1;
+    padding: 0 12px;
+}
+
+.search-box button {
+    height: 100%;
+    border: 0;
+    background: var(--green);
+    color: #fff;
+    padding: 0 25px;
+}
+
+.wishlist-link {
+    color: #222;
+    text-decoration: none;
+}
+
+.wishlist-link:hover {
+    color: var(--green);
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+    font-size: 19px;
+}
+
+.header-icons .divider {
+    height: 25px;
+    border-left: 1px solid #ddd;
+}
+
+.cart-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #222;
+}
+
+.cart-link:hover {
+    color: var(--green);
+}
+
+.cart-link i {
+    font-size: 22px;
+}
+
+.cart-text {
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.cart-text small,
+.cart-text strong {
+    display: block;
+}
+
+.cart-text small {
+    color: #777;
+    font-size: 12px;
+}
+
+.cart-text strong {
+    color: #222;
+    font-size: 12px;
+}
+
+/*NAVBAR*/
+
+.shop-nav {
+    background: #333;
+}
+
+.shop-nav .nav-link {
+    color: #fff !important;
+    font-size: 13px;
+    padding: 14px 17px;
+}
+
+.shop-nav .nav-link:hover {
+    background: #222;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    margin-top: 0;
+}
+
+.phone {
+    color: #fff;
+    font-size: 13px;
+}
+
+/*HERO*/
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+}
+
+.hero-main,
+.side-banner {
+    border-radius: 7px;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.hero-main {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 65, 30, 0.9),
+            rgba(0, 65, 30, 0.15)
+        ),
+        url("https://img.magnific.com/free-photo/happy-curly-haired-young-woman-embraces-bouquet-fresh-vegetables-picked-up-from-own-garden-smiles-broadly-dressed-casual-t-shirt-isolated-pink-background-with-copy-space-promno_273609-61888.jpg?semt=ais_hybrid&w=740&q=80")
+        center / cover;
+}
+
+.hero-content {
+    padding: 55px;
+    color: #fff;
+}
+
+.small-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 5px 0 12px;
+}
+
+.hero-content p span {
+    color: #fff;
+    background: #ffcc00;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.green-btn {
+    background: var(--green);
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.green-btn:hover {
+    background: #009c06;
+    color: #fff;
+}
+
+/*HERO SIDE*/
+
+.hero-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+}
+
+.side-banner {
+    position: relative;
+    padding: 28px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.sale-banner {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.1)
+        ),
+        url("https://iowastater.iastate.edu/files/images/2023-02/Iowa%20Stater%202552%20x%201436%20px5.jpg");
+
+    color: #222;
+}
+
+.deal-banner {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 65, 30, 0.9),
+            rgba(0, 65, 30, 0.25)
+        ),
+        url("https://t3.ftcdn.net/jpg/03/33/67/80/360_F_333678091_tOcalp3NEz7oNgOSS8gXYtfH5Q4DPOV9.jpg");
+}
+
+.side-banner h3 {
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.side-banner a {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/*FEATURES*/
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 18px;
+    margin: 12px 0 35px;
+    background: #fff;
+}
+
+.features div {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    column-gap: 5px;
+}
+
+.features i {
+    grid-row: 1 / 3;
+    color: var(--green);
+    font-size: 22px;
+}
+
+.features strong {
+    font-size: 12px;
+}
+
+.features small {
+    font-size: 10px;
+    color: #888;
+}
+
+/*SECTIONS*/
+
+.section {
+    margin: 35px 0;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section-title h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.section-title a {
+    color: var(--green);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.center-title {
+    justify-content: center;
+}
+
+/*CATEGORIES*/
+
+.category-card {
+    border: 1px solid var(--border);
+    padding: 12px;
+    text-align: center;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.category-card:hover {
+    border-color: var(--green);
+    box-shadow: 0 4px 15px #0001;
+}
+
+.category-card img {
+    width: 100%;
+    height: 90px;
+    object-fit: contain;
+}
+
+.category-card b {
+    font-size: 12px;
+    display: block;
+    margin-top: 7px;
+}
+
+/*PRODUCTS*/
+
+.product-grid {
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.product-card {
+    position: relative;
+    min-height: 245px;
+    padding: 14px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: #fff;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 18px #0002;
+    z-index: 2;
+}
+
+.product-card img {
+    width: 100%;
+    height: 125px;
+    object-fit: contain;
+}
+
+.product-card small {
+    font-size: 10px;
+    color: #777;
+    display: block;
+}
+
+.product-card h6 {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.product-card b {
+    font-size: 13px;
+}
+
+.product-card .stars {
+    font-size: 9px;
+    color: #ff9d00;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+.product-card .heart {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 0;
+    background: #fff;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+.heart i {
+    color: #666;
+    transition: 0.2s;
+}
+
+.heart:hover i {
+    color: var(--green);
+}
+
+.product-card .eye {
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    color: #555;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.product-card .eye:hover {
+    color: #00b207;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #f2f2f2;
+    color: #333;
+    top: -35px;
+    float: right;
+}
+
+.cart-btn:hover {
+    background: var(--green);
+    color: white;
+}
+
+.product-card .sale-tag {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: #ea4b48;
+    color: #fff;
+    font-size: 9px;
+    padding: 4px 6px;
+    border-radius: 3px;
+}
+
+.product-card:hover {
+    border: 1px solid var(--green);
+    box-shadow: 0 4px 18px #0002;
+    z-index: 2;
+}
+
+.add-cart {
+    width: 100%;
+    border: 0;
+    border-radius: 18px;
+    background: var(--green);
+    color: #fff;
+    font-size: 10px;
+    padding: 7px;
+    margin-top: 8px;
+}
+
+/*PROMO BANNERS*/
+
+.promo-row {
+    margin: 40px 0;
+}
+
+.promo {
+    height: 245px;
+    border-radius: 7px;
+    padding: 35px 28px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.promo h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.promo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.promo-blue {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 125, 185, 0.85),
+            rgba(0, 125, 185, 0.2)
+        ),
+        url("https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=700&q=80");
+}
+
+.promo-banner {
+    position: relative;
+}
+
+.countdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.countdown div {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00b207;
+}
+
+.countdown small {
+    font-size: 8px;
+    color: #666;
+}
+
+.promo-dark {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url("https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=700&q=80");
+}
+
+.promo-yellow {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(240, 180, 0, 0.9),
+            rgba(240, 180, 0, 0.15)
+        ),
+        url("https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=700&q=80");
+}
+
+/*WIDE BANNER*/
+
+.wide-banner {
+    min-height: 180px;
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("https://www.shutterstock.com/image-photo/male-farmer-box-vegetables-fruits-260nw-2693983723.jpg")
+        center / cover;
+
+    color: #fff;
+    padding: 35px 55px;
+    margin: 45px 0;
+}
+
+.wide-banner h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.wide-banner p {
+    font-size: 13px;
+}
+
+.sale {
+    font-size: 40px;
+}
+
+.sale-tag {
+    color: #f5a623;
+}
+
+.off {
+    color: white;
+}
+
+/*NEWS*/
+
+.news-container {
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+}
+
+.news-card {
+    min-width: calc(50% - 13px);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.news-image {
+    height: 370px;
+    position: relative;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-date {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-date strong {
+    font-size: 20px;
+}
+
+.news-date span {
+    font-size: 12px;
+    color: #777;
+}
+
+.news-content {
+    padding: 25px;
+}
+
+.news-info {
+    display: flex;
+    gap: 15px;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.news-info i {
+    margin-right: 3px;
+}
+
+.news-content h5 {
+    color: #2f7d32;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.news-content a {
+    color: #22a447;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-content a i {
+    margin-left: 5px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    background-color: #f5f5f5;
+    padding: 70px 0;
+}
+
+.testimonial-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+#testimonialsTrack {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease;
+    margin: 0;
+}
+
+.slider-card {
+    flex: 0 0 33.333333%;
+    width: 33.333333%;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    height: 100%;
+    min-height: 190px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.quote-icon {
+    color: #00b207;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.testimonial strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.testimonial .stars {
+    color: #ff9f00;
+}
+
+.testimonial-arrows button {
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.testimonial-arrows button:hover {
+    background-color: #00b207;
+    color: white;
+}
+
+/*INSTAGRAM*/
+
+.instagram {
+    padding: 30px 0 40px;
+    background: #fff;
+}
+
+.instagram h3 {
+    margin: 35px 0 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/*BRAND LOGOS*/
+
+.brand-logos {
+    height: 70px;
+    border-bottom: 1px solid #eee;
+}
+
+.brand {
+    color: #cfcfcf;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.8;
+    text-align: center;
+    min-width: 100px;
+}
+
+.steps {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.mango {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.food {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.food-bold {
+    font-size: 18px;
+}
+
+.book {
+    font-size: 14px;
+}
+
+.g-series {
+    font-size: 14px;
+}
+
+
+/*INSTAGRAM SLIDER*/
+
+.instagram-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/*Images container*/
+
+.instagram-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/*Moving track*/
+
+.instagram-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/*Each image*/
+
+.instagram-slide {
+    flex: 0 0 33.333333%;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+/*Image link*/
+
+.instagram-slide a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+/*Image*/
+
+.instagram-slide img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+/*INSTAGRAM HOVER*/
+
+.instagram-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/*Instagram icon*/
+
+.instagram-overlay i {
+    color: white;
+    font-size: 35px;
+    transform: scale(0.7);
+    transition: 0.3s ease;
+}
+
+/*When hover*/
+
+.instagram-slide:hover .instagram-overlay {
+    opacity: 1;
+}
+
+.instagram-slide:hover .instagram-overlay i {
+    transform: scale(1);
+}
+
+.instagram-slide:hover img {
+    transform: scale(1.05);
+}
+
+
+/*ARROWS*/
+
+.instagram-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.instagram-arrow:hover {
+    background: #00b207;
+    color: white;
+}
+
+.instagram-prev {
+    left: -20px;
+}
+
+.instagram-next {
+    right: -20px;
+}
+
+/*DOTS*/
+
+.instagram-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.instagram-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: none;
+    background: #d5d5d5;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.instagram-dot.active {
+    width: 10px;
+    height: 10px;
+    background: #00b207;
+}
+
+/*NEWSLETTER*/
+
+.newsletter {
+    background: #f5f5f5;
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.newsletter h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.newsletter p {
+    font-size: 11px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-left: 10px;
+}
+
+.social-icons a {
+    color: #555;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: var(--green);
+}
+
+.newsletter-form input {
+    border: 1px solid #ddd;
+    border-radius: 25px 0 0 25px;
+    padding: 12px 18px;
+    flex: 1;
+    outline: 0;
+}
+
+.newsletter-form button {
+    border: 0;
+    background: var(--green);
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    padding: 12px 25px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: #1a1a1a;
+    color: #999;
+    padding: 50px 0 20px;
+    margin-top: 0;
+}
+
+.footer h6 {
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.footer a {
+    display: block;
+    color: #999;
+    text-decoration: none;
+    font-size: 11px;
+    margin: 8px 0;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer p {
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.footer hr {
+    border-color: #333;
+    margin: 35px 0 18px;
+}
+
+.footer .logo {
+    font-size: 20px;
+}
+
+/*COUNTS*/
+
+.wishlist-link,
+.cart-link {
+    position: relative;
+}
+
+.wishlist-count,
+.cart-count {
+    position: absolute;
+
+    top: -8px;
+    right: -8px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #00B207;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-count {
+    top: -8px;
+    left: 8px;
+}
+
+/*NOTIFICATION*/
+
+.js-message {
+    position: absolute;
+    top: -45px;
+    right: 70px;
+    background-color: white;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    border-left: 3px solid #00B207;
+    z-index: 9999;
+
+    opacity: 0;
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+.js-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*JS MESSAGE*/
+
+.js-message {
+    position: fixed;
+    top: 90px;
+    right: 25px;
+    background-color: #00B207;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: 0.3s;
+}
+
+.js-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*RESPONSIVE - TABLET*/
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-side {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*RESPONSIVE - MOBILE*/
+
+@media (max-width: 575px) {
+
+    .hero-content {
+        padding: 35px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-main,
+    .side-banner {
+        min-height: 230px;
+    }
+
+    .hero-side {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter {
+        display: block;
+    }
+
+    .newsletter-form {
+        margin-top: 15px;
+    }
+
+    .wide-banner {
+        padding: 30px 25px;
+    }
+
+    .instagram img {
+        height: 85px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .slider-card {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+}
