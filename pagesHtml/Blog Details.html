@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecobazar - Blog Details</title>
+  
+  <!-- External CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <!-- Top Bar -->
+    <div class="bg-dark text-white-50 py-2 small">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-2">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Store location: Lincoln- 344, Illinois, Chicago, USA</span>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+          <div class="dropdown">
+            <a class="text-white-50 text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Eng</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Eng</a></li>
+              <li><a class="dropdown-item" href="#">Ara</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a class="text-white-50 text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">USD</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">USD</a></li>
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+            </ul>
+          </div>
+          <span class="border-end border-secondary opacity-50 h-100"></span>
+          <a href="#" class="text-white-50 text-decoration-none">Sign In / Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="py-3 border-bottom">
+      <div class="container d-flex align-items-center justify-content-between gap-3">
+        <a href="#" class="d-flex align-items-center text-decoration-none text-dark fw-bold fs-3">
+          <i class="fa-solid fa-leaf text-success me-2"></i>
+          <span>Ecobazar</span>
+        </a>
+
+        <div class="flex-grow-1 mx-lg-5 mx-2" style="max-width: 500px;">
+          <div class="bg-white border rounded-2 p-1 d-flex align-items-center">
+            <i class="fa-solid fa-magnifying-glass text-muted ps-2"></i>
+            <input type="text" id="mainSearchInput" class="form-control border-0 bg-transparent shadow-none ps-2" placeholder="Search">
+            <button class="btn btn-success rounded-2 px-4 text-nowrap fw-medium" type="button">Search</button>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-dark fs-4 text-decoration-none me-2">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <div class="d-flex align-items-center gap-2 border-start ps-3">
+            <div class="position-relative">
+              <i class="fa-solid fa-bag-shopping fs-4"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success" style="font-size: 10px;">2</span>
+            </div>
+            <div class="ms-2 d-none d-sm-block text-start small">
+              <div class="text-muted" style="font-size: 11px;">Shopping cart:</div>
+              <div class="fw-bold">$57.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-2">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-success fw-medium" href="#" data-bs-toggle="dropdown">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" href="#" data-bs-toggle="dropdown">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" href="#" data-bs-toggle="dropdown">Pages</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" href="#" data-bs-toggle="dropdown">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 text-dark fw-bold">
+            <i class="fa-solid fa-phone-volume fs-5"></i>
+            <span>(219) 555-0114</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner d-flex align-items-center">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="#" class="text-white opacity-75 text-decoration-none">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li class="breadcrumb-item active text-success fw-medium" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Left Column: Article Details -->
+        <div class="col-lg-9">
+          <!-- Main Article Image -->
+          <div class="mb-4">
+            <img src="images/singel.jpeg" class="img-fluid rounded-3 w-100 object-fit-cover" style="max-height: 450px;" alt="Main Article Image">
+          </div>
+
+          <!-- Article Meta Information -->
+          <div class="d-flex align-items-center gap-3 text-muted extra-small mb-2">
+            <span><i class="fa-regular fa-folder text-success me-1"></i>Food</span>
+            <span><i class="fa-regular fa-user text-success me-1"></i>By Admin</span>
+            <span><i class="fa-regular fa-comments text-success me-1"></i>65 Comments</span>
+          </div>
+
+          <!-- Article Title -->
+          <h2 class="fw-bold text-dark mb-3">Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.</h2>
+
+          <!-- Author Info & Social Sharing -->
+          <div class="d-flex flex-wrap align-items-center justify-content-between border-top border-bottom py-2 mb-4 gap-3">
+            <div class="d-flex align-items-center gap-2">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" class="rounded-circle" width="40" height="40" alt="Author">
+              <div>
+                <h6 class="mb-0 fw-bold small">Cameron Williamson</h6>
+                <span class="text-muted extra-small">4 April, 2021 • 6 min read</span>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center gap-2">
+              <a href="#" class="text-secondary px-1"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-secondary px-1"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="text-secondary px-1"><i class="fa-brands fa-pinterest-p"></i></a>
+              <a href="#" class="text-secondary px-1"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Article Content -->
+          <div class="text-secondary mb-5 small lh-lg">
+            <p class="fw-medium text-dark">Maecenas lacinia felis nec placerat sollicitudin. Quisque placerat dolor at scelerisque imperdiet. Phasellus tristique felis dolor.</p>
+            <p>Maecenas elementum in risus sed condimentum. Duis convallis ante ac tempus maximus. Fusce malesuada sed velit ut dictum. Morbi faucibus vitae orci at euismod. Integer auctor augue in erat vehicula, quis fermentum ex finibus.</p>
+            <p>Mauris pretium elit a dui pulvinar, in ornare sapien euismod. Nullam interdum nisl ante, id feugiat quam euismod commodo. Sed ultrices lectus ut iaculis rhoncus. Aenean non dignissim justo, at fermentum turpis. Sed molestie, ligula ut molestie ultrices, tellus ligula viverra neque, malesuada consectetur diam sapien volutpat risus. Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. ur ridiculus mus.</p>
+          </div>
+
+          <!-- Comment Form Section -->
+          <div class="mb-5 pt-3 border-top">
+            <h5 class="fw-bold mb-3">Leave a Comment</h5>
+            <form>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label small text-muted">Full Name</label>
+                  <input type="text" class="form-control rounded-2" placeholder="Zakir Hossen">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small text-muted">Email</label>
+                  <input type="email" class="form-control rounded-2" placeholder="zakirsoft20@gmail.com">
+                </div>
+                <div class="col-12">
+                  <label class="form-label small text-muted">Message</label>
+                  <textarea class="form-control rounded-2" rows="4" placeholder="Write your comment here..."></textarea>
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="saveInfo">
+                <label class="form-check-label small text-muted" for="saveInfo">
+                  Save my name and email in this browser for the next time I comment.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-success rounded-pill px-4 fw-medium">Post Comments</button>
+            </form>
+          </div>
+
+          <!-- Comments Display Section -->
+          <div>
+            <h5 class="fw-bold mb-4">Comments</h5>
+            <div class="d-flex flex-column gap-4">
+              <div class="d-flex gap-3 border-bottom pb-3">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" class="rounded-circle" width="45" height="45" alt="User">
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <h6 class="fw-bold mb-0 small">Annette Black</h6>
+                    <span class="text-muted extra-small">• 26 Apr, 2021</span>
+                  </div>
+                  <p class="text-secondary small mb-0">In a nisl commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3 border-bottom pb-3">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" class="rounded-circle" width="45" height="45" alt="User">
+                <div>
+                  <div class="d-flex align-items-center gap-2 mb-1">
+                    <h6 class="fw-bold mb-0 small">Devon Lane</h6>
+                    <span class="text-muted extra-small">• 24 Apr, 2021</span>
+                  </div>
+                  <p class="text-secondary small mb-0">Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-success rounded-pill px-4 btn-sm fw-medium">Load More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-lg-3">
+          <!-- Search Widget -->
+          <div class="mb-4">
+            <div class="bg-white border rounded-2 p-1 d-flex align-items-center">
+              <i class="fa-solid fa-magnifying-glass text-muted ps-2"></i>
+              <input type="text" class="form-control border-0 bg-transparent shadow-none ps-2 small" placeholder="Search...">
+            </div>
+          </div>
+
+          <!-- Top Categories Widget -->
+          <div class="mb-4">
+            <h6 class="fw-bold mb-3 border-bottom pb-2">Top Categories</h6>
+            <ul class="list-unstyled small d-flex flex-column gap-2 text-muted">
+              <li class="d-flex justify-content-between"><span>Fresh Fruit</span> <span>(134)</span></li>
+              <li class="d-flex justify-content-between"><span>Vegetables</span> <span>(150)</span></li>
+              <li class="d-flex justify-content-between"><span>Cooking</span> <span>(54)</span></li>
+              <li class="d-flex justify-content-between"><span>Snacks</span> <span>(47)</span></li>
+              <li class="d-flex justify-content-between"><span>Beverages</span> <span>(43)</span></li>
+              <li class="d-flex justify-content-between"><span>Beauty & Health</span> <span>(38)</span></li>
+              <li class="d-flex justify-content-between"><span>Bread & Bakery</span> <span>(15)</span></li>
+            </ul>
+          </div>
+
+          <!-- Popular Tags Widget -->
+          <div class="mb-4">
+            <h6 class="fw-bold mb-3 border-bottom pb-2">Popular Tag</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark border rounded-pill px-3 py-2 fw-normal">Healthy</span>
+              <span class="badge bg-success rounded-pill px-3 py-2 fw-normal">Low fat</span>
+              <span class="badge bg-light text-dark border rounded-pill px-3 py-2 fw-normal">Vegetarian</span>
+              <span class="badge bg-light text-dark border rounded-pill px-3 py-2 fw-normal">Bread</span>
+              <span class="badge bg-light text-dark border rounded-pill px-3 py-2 fw-normal">Kid foods</span>
+            </div>
+          </div>
+
+          <!-- Gallery Widget -->
+          <div class="mb-4">
+            <h6 class="fw-bold mb-3 border-bottom pb-2">Our Gallery</h6>
+            <div class="row g-2">
+              <div class="col-3"><img src="images/card 1.avif" class="img-fluid rounded gallery-img" alt="Gallery"></div>
+              <div class="col-3"><img src="images/card2.avif" class="img-fluid rounded gallery-img" alt="Gallery"></div>
+              <div class="col-3"><img src="images/card3.avif" class="img-fluid rounded gallery-img" alt="Gallery"></div>
+              <div class="col-3"><img src="images/card4.avif" class="img-fluid rounded gallery-img" alt="Gallery"></div>
+            </div>
+          </div>
+
+          <!-- Recently Added Widget -->
+          <div class="mb-4">
+            <h6 class="fw-bold mb-3 border-bottom pb-2">Recently Added</h6>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-center gap-2">
+                <img src="images/card5.avif" class="rounded object-fit-cover" width="60" height="60" alt="Recent">
+                <div>
+                  <a href="#" class="text-dark text-decoration-none fw-medium small d-block lh-sm">Curabitur porttitor orci eget nequ accumsan.</a>
+                  <span class="text-muted extra-small"><i class="fa-regular fa-calendar me-1"></i>Apr 25, 2021</span>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2">
+                <img src="images/card6avif.avif" class="rounded object-fit-cover" width="60" height="60" alt="Recent">
+                <div>
+                  <a href="#" class="text-dark text-decoration-none fw-medium small d-block lh-sm">Donec mattis arcu faucibus suscipit viverra.</a>
+                  <span class="text-muted extra-small"><i class="fa-regular fa-calendar me-1"></i>Apr 25, 2021</span>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2">
+                <img src="images/card7.avif" class="rounded object-fit-cover" width="60" height="60" alt="Recent">
+                <div>
+                  <a href="#" class="text-dark text-decoration-none fw-medium small d-block lh-sm">Quisque posuere tempus rutrum. Integer velit ex.</a>
+                  <span class="text-muted extra-small"><i class="fa-regular fa-calendar me-1"></i>Apr 25, 2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section bg-dark text-white-50 pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="d-flex align-items-center text-decoration-none text-white fw-bold fs-3 mb-3">
+            <i class="fa-solid fa-leaf text-success me-2"></i>
+            <span>Ecobazar</span>
+          </a>
+          <p class="small opacity-75 mb-3" style="line-height: 1.6;">
+            Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
+          </p>
+          <div class="d-flex align-items-center gap-2 small">
+            <span class="text-white border-bottom border-success border-2 pb-1 fw-medium">(219) 555-0114</span>
+            <span class="opacity-50">or</span>
+            <span class="text-white border-bottom border-success border-2 pb-1 fw-medium">Proxy@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 ms-lg-auto">
+          <h6 class="text-white fw-bold mb-3">My Account</h6>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="text-white-50 text-decoration-none">My Account</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Order History</a></li>
+            <li><a href="#" class="text-white text-decoration-none fw-medium">Shoping Cart</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Wishlist</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Helps</h6>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Faqs</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Terms & Condition</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Proxy</h6>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="text-white-50 text-decoration-none">About</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Shop</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Product</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Track Order</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Categories</h6>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="text-white-50 text-decoration-none">Fruit & Vegetables</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Meat & Fish</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Bread & Bakery</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Beauty & Health</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between pt-3 small opacity-75">
+        <p class="mb-2 mb-md-0">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+        
+        <div class="d-flex align-items-center gap-2 fs-5">
+          <i class="fa-brands fa-cc-apple-pay text-white"></i>
+          <i class="fa-brands fa-cc-visa text-white"></i>
+          <i class="fa-brands fa-cc-discover text-white"></i>
+          <i class="fa-brands fa-cc-mastercard text-white"></i>
+          <span class="badge bg-secondary opacity-75 text-white fw-normal ms-1" style="font-size: 10px;">
+            <i class="fa-solid fa-lock me-1"></i>Secure Payment
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
