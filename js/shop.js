@@ -1,45 +1,21 @@
-let products = document.querySelectorAll(".product-card");
-let categories = document.querySelectorAll(".category-filter");
-let ratings = document.querySelectorAll(".rating-filter");
-let price = document.querySelector("#priceFilter");
+let products = document.querySelectorAll(".card[data-category]");
+let categories = document.querySelectorAll(".my-category-filter");
 
 function filterProducts() {
 
-    let selectedCategory = "all";
-    let selectedRating = 0;
+    let selectedCategory;
 
-    // Get selected category
     categories.forEach(function(category) {
         if (category.checked) {
             selectedCategory = category.getAttribute("data-category");
         }
     });
 
-    // Get selected rating
-    ratings.forEach(function(rating) {
-        if (rating.checked) {
-            selectedRating = Number(rating.getAttribute("data-rating"));
-        }
-    });
-
-    // Filter products
     products.forEach(function(product) {
 
         let productCategory = product.getAttribute("data-category");
-        let productRating = Number(product.getAttribute("data-rating"));
-        let productPrice = Number(product.getAttribute("data-price"));
 
-        let categoryMatch =
-            selectedCategory === "all" ||
-            productCategory === selectedCategory;
-
-        let ratingMatch =
-            productRating >= selectedRating;
-
-        let priceMatch =
-            productPrice <= Number(price.value);
-
-        if (categoryMatch && ratingMatch && priceMatch) {
+        if (productCategory === selectedCategory) {
             product.parentElement.style.display = "";
         } else {
             product.parentElement.style.display = "none";
@@ -48,19 +24,22 @@ function filterProducts() {
     });
 }
 
-// Category filter
 categories.forEach(function(category) {
     category.addEventListener("change", filterProducts);
 });
 
-// Rating filter
-ratings.forEach(function(rating) {
-    rating.addEventListener("change", filterProducts);
+// Cart
+let cartCount = 0;
+
+let cartButtons = document.querySelectorAll(".my-cart-btn,.my-add-to-cart-modal");
+let cartCountElement = document.querySelector(".cart-count");
+
+cartButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        cartCount++;
+        cartCountElement.textContent = cartCount;
+    });
 });
-
-// Price filter
-price.addEventListener("input", filterProducts);
-
 // Favorites
 let favoriteCount = 0;
 
@@ -71,20 +50,6 @@ favoriteButtons.forEach(function(button) {
     button.addEventListener("click", function() {
         favoriteCount++;
         wishlistCount.textContent = favoriteCount;
-    });
-});
-
-
-// Cart
-let cartCount = 0;
-
-let cartButtons = document.querySelectorAll(".add-to-cart-btn");
-let cartCountElement = document.querySelector(".cart-count");
-
-cartButtons.forEach(function(button) {
-    button.addEventListener("click", function() {
-        cartCount++;
-        cartCountElement.textContent = cartCount;
     });
 });
 
@@ -107,8 +72,8 @@ minusBtn.addEventListener("click", function() {
 });
 
 //swap pics
-let thumbs = document.querySelectorAll(".modal-thumb");
-let mainImage = document.querySelector(".modal-main-img");
+let thumbs = document.querySelectorAll(".my-modal-thumb");
+let mainImage = document.querySelector(".my-modal-main-img");
 
 thumbs.forEach(function(thumb) {
     thumb.addEventListener("click", function() {

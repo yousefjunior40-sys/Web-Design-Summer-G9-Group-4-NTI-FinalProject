@@ -6,7 +6,7 @@
   <title>About - EcoBazar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link rel="stylesheet" href="../pagesCss/about.css">
+  <link rel="stylesheet" href="/pagesCss/about.css">
 </head>
 <body>
 
@@ -18,9 +18,9 @@
         <a href="" class="top-link">Eng <i class="fa-solid fa-chevron-down ms-1"></i></a>
         <a href="" class="top-link ms-3">USD <i class="fa-solid fa-chevron-down ms-1"></i></a>
         <span class="mx-2">|</span>
-        <a href="sign-in.html" class="top-link">Sign In</a>
+        <a href="" class="top-link">Sign In</a>
         <span class="mx-1">/</span>
-        <a href="create-account.html" class="top-link">Sign Up</a>
+        <a href="" class="top-link">Sign Up</a>
     </div>
   </div>
 </div>
@@ -50,7 +50,7 @@
           <span class="wishlist-count">0</span>
           </a>
           <span class="divider"></span>
-          <a href="checkout.html" class="cart-link">
+          <a href="shopping.html" class="cart-link">
           <i class="fa-solid fa-bag-shopping"></i>
           <span class="cart-count">0</span>
           <div class="cart-text d-none d-md-inline">
@@ -72,19 +72,19 @@
 
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="shop.html">Shop</a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="../pagesHtml/product-details.html">Product Details</a></li>
-            <li><a class="dropdown-item" href="../pagesHtml/wishlist.html">Wishlist</a></li>
+            <li><a class="dropdown-item" href="pages/product-details.html">Product Details</a></li>
+            <li><a class="dropdown-item" href="pages/wishlist.html">Wishlist</a></li>
             <li><a class="dropdown-item" href="#">Cart Details</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="../pagesHtml/faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="../pagesHtml/about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="../pagesHtml/contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact Us</a></li>
       </ul>
       <div class="phone"><i class="fa-solid fa-phone"></i> (219) 555-0114</div>
     </div>
@@ -109,163 +109,144 @@
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros.</p>
       </div>
       <div class="col-md-6">
-        <div class="ratio ratio-4x3 bg-light rounded-4">
-          <img src="../images/farmer1.png" alt="" class="object-fit-cover rounded-4">
-        </div>
+        <img src="../images/farmer1.png" alt="" class="my-about-img rounded-4">
       </div>
     </div>
 
-    <!-- Bottom Row -->
-    <div class="row align-items-center gy-4">
-      <div class="col-md-6 order-2 order-md-1">
-        <div class="ratio ratio-4x3 bg-light rounded-4">
-          <img src="../images/Image2.png" alt="" class="object-fit-cover rounded-4">
+   <!-- Bottom Row -->
+<div class="row align-items-center gy-4">
+  <div class="col-md-6 order-2 order-md-1">
+    <img src="../images/Image2.png" alt="" class="my-about-img rounded-4">
+  </div>
+
+  <div class="col-md-6 order-1 order-md-2">
+    <h2 class="fw-bold">100% Trusted<br>Organic Food Store</h2>
+    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac.</p>
+
+    <div class="row g-3">
+      <div class="col-6 d-flex align-items-center gap-2">
+        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div>
+          <h6 class="mb-0 fw-bold">100% Organic food</h6>
+          <small class="text-muted">Lorem ipsum dolor sit amet</small>
         </div>
       </div>
-      <div class="col-md-6 order-1 order-md-2">
-        <h2 class="fw-bold">100% Trusted<br>Organic Food Store</h2>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac.</p>
+
+      <div class="col-6 d-flex align-items-center gap-2">
+        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div>
+          <h6 class="mb-0 fw-bold">Great Support 24/7</h6>
+          <small class="text-muted">Lorem ipsum dolor sit amet</small>
+        </div>
+      </div>
+
+      <div class="col-6 d-flex align-items-center gap-2">
+        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div>
+          <h6 class="mb-0 fw-bold">Customer Feedback</h6>
+          <small class="text-muted">Lorem ipsum dolor sit amet</small>
+        </div>
+      </div>
+
+      <div class="col-6 d-flex align-items-center gap-2">
+        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div>
+          <h6 class="mb-0 fw-bold">100% Secure Payment</h6>
+          <small class="text-muted">Lorem ipsum dolor sit amet</small>
+        </div>
+      </div>
+
+      <div class="col-6 d-flex align-items-center gap-2">
+        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <div>
+          <h6 class="mb-0 fw-bold">Free Shipping</h6>
+          <small class="text-muted">Lorem ipsum dolor sit amet</small>
+        </div>
+      </div>
+
+      <div class="col-6 d-flex align-items-center gap-2">
+        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+          <i class="fa-solid fa-box"></i>
+        </div>
+        <div>
+          <h6 class="mb-0 fw-bold">100% Organic Food</h6>
+          <small class="text-muted">Lorem ipsum dolor sit amet</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Our Awesome Team -->
+  <section class="py-5 bg-body-tertiary w-100">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Our Awesome Team</h2>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="my-team-wrapper">
+        <button class="my-team-arrow my-team-prev" type="button">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
         <div class="row g-3">
-          <div class="col-6 d-flex align-items-center gap-2">
-            <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
-            <div>
-              <h6 class="mb-0 fw-bold">100% Organic food</h6>
-              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+          <div class="col-6 col-md-3">
+            <div class="my-team-card">
+              <img src="../images/member1.jpg" alt="" class="my-team-img">
+              <div class="p-3">
+                <h6 class="fw-bold mb-0">Jenny Wilson</h6>
+                <small class="text-muted">Lorem ipsum</small>
+              </div>
             </div>
           </div>
-          <div class="col-6 d-flex align-items-center gap-2">
-            <div class="icon-circle"><i class="fa-solid fa-headset"></i></div>
-            <div>
-              <h6 class="mb-0 fw-bold">Great Support 24/7</h6>
-              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+
+          <div class="col-6 col-md-3">
+            <div class="my-team-card">
+              <img src="../images/member2.jpg" alt="" class="my-team-img">
+              <div class="p-3">
+                <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                <small class="text-muted">Lorem ipsum</small>
+              </div>
             </div>
           </div>
-          <div class="col-6 d-flex align-items-center gap-2">
-            <div class="icon-circle"><i class="fa-solid fa-star"></i></div>
-            <div>
-              <h6 class="mb-0 fw-bold">Customer Feedback</h6>
-              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+
+          <div class="col-6 col-md-3">
+            <div class="my-team-card">
+              <img src="../images/member3.jpg" alt="" class="my-team-img">
+              <div class="p-3">
+                <h6 class="fw-bold mb-0">Cody Fisher</h6>
+                <small class="text-muted">Lorem ipsum</small>
+              </div>
             </div>
           </div>
-          <div class="col-6 d-flex align-items-center gap-2">
-            <div class="icon-circle"><i class="fa-solid fa-bag-shopping"></i></div>
-            <div>
-              <h6 class="mb-0 fw-bold">100% Secure Payment</h6>
-              <small class="text-muted">Lorem ipsum dolor sit amet</small>
-            </div>
-          </div>
-          <div class="col-6 d-flex align-items-center gap-2">
-            <div class="icon-circle"><i class="fa-solid fa-truck"></i></div>
-            <div>
-              <h6 class="mb-0 fw-bold">Free Shipping</h6>
-              <small class="text-muted">Lorem ipsum dolor sit amet</small>
-            </div>
-          </div>
-          <div class="col-6 d-flex align-items-center gap-2">
-            <div class="icon-circle"><i class="fa-solid fa-box"></i></div>
-            <div>
-              <h6 class="mb-0 fw-bold">100% Organic Food</h6>
-              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+
+          <div class="col-6 col-md-3">
+            <div class="my-team-card">
+              <img src="../images/member4.jpg" alt="" class="my-team-img">
+              <div class="p-3">
+                <h6 class="fw-bold mb-0">Robert Fox</h6>
+                <small class="text-muted">Lorem ipsum</small>
+              </div>
             </div>
           </div>
         </div>
+
+        <button class="my-team-arrow my-team-next" type="button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- PART 3: WE DELIVERED & OUR TEAM -->
-<section class="py-5">
-  <!-- We Delivered -->
-  <div class="container mb-5">
-    <div class="row align-items-center gy-4">
-      <div class="col-md-6">
-        <h2 class="fw-bold">We Delivered, You<br>Enjoy Your Order.</h2>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor ligula in nunc varius sagittis.</p>
-        <div class="mb-3">
-          <div class="mb-1"><i class="fa-solid fa-check check-icon me-2"></i><small class="text-muted">Lorem ipsum dolor sit amet.</small></div>
-          <div class="mb-1"><i class="fa-solid fa-check check-icon me-2"></i><small class="text-muted">Lorem ipsum dolor sit amet, consectetur.</small></div>
-          <div class="mb-3"><i class="fa-solid fa-check check-icon me-2"></i><small class="text-muted">Lorem ipsum dolor sit amet.</small></div>
-        </div>
-        <button class="btn btn-success rounded-pill px-4">Shop Now <i class="fa-solid fa-arrow-right ms-1"></i></button>
-      </div>
-      <div class="col-md-6">
-     <div class="ratio ratio-4x3 bg-white rounded-4 overflow-hidden p-3">
-     <img src="../images/deliveryguy.png" alt="Delivery Guy" class="w-100 h-100 object-fit-contain rounded-4">
-      </div>
-      </div>
-    </div>
-  </div>
-
-<!-- Our Awesome Team Section (Static with Visual Arrows) -->
-<section class="py-5 bg-body-tertiary w-100">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="fw-bold">Our Awesome Team</h2>
-      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-
-    <div class="team-wrapper position-relative px-md-5">
-      <!-- Visual Left Arrow (Disabled) -->
-      <button class="position-absolute top-50 start-0 translate-middle-y btn btn-white bg-white border rounded-circle shadow-sm d-flex align-items-center justify-content-center z-3" type="button" disabled style="width: 40px; height: 40px; cursor: default;">
-        <i class="fa-solid fa-arrow-left"></i>
-      </button>
-
-      <!-- Static Team Members Grid -->
-      <div class="row g-3">
-        <div class="col-6 col-md-3">
-          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
-            <div class="ratio ratio-1x1 bg-white">
-              <img src="../images/member1.jpg" alt="" class="card-img-top object-fit-cover">
-            </div>
-            <div class="card-body">
-              <h6 class="fw-bold mb-0">Jenny Wilson</h6>
-              <small class="text-muted">Lorem ipsum</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
-            <div class="ratio ratio-1x1 bg-white">
-              <img src="../images/member2.jpg" alt="" class="card-img-top object-fit-cover">
-            </div>
-            <div class="card-body">
-              <h6 class="fw-bold mb-0">Jane Cooper</h6>
-              <small class="text-muted">Lorem ipsum</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
-            <div class="ratio ratio-1x1 bg-white">
-              <img src="../images/member3.jpg" alt="" class="card-img-top object-fit-cover">
-            </div>
-            <div class="card-body">
-              <h6 class="fw-bold mb-0">Cody Fisher</h6>
-              <small class="text-muted">Lorem ipsum</small>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
-            <div class="ratio ratio-1x1 bg-white">
-              <img src="../images/member4.jpg" alt="" class="card-img-top object-fit-cover">
-            </div>
-            <div class="card-body">
-              <h6 class="fw-bold mb-0">Robert Fox</h6>
-              <small class="text-muted">Lorem ipsum</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Visual Right Arrow (Disabled) -->
-      <button class="position-absolute top-50 end-0 translate-middle-y btn btn-white bg-white border rounded-circle shadow-sm d-flex align-items-center justify-content-center z-3" type="button" disabled style="width: 40px; height: 40px; cursor: default;">
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-    </div>
-  </div>
-</section>
+  </section>
 </section>
 
 <!-- PART 4: TESTIMONIAL & BRANDS -->
@@ -285,56 +266,44 @@
         <div class="carousel-item active">
           <div class="row g-3">
             <div class="col-md-4">
-              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="../images/Testimonial Card1.png" alt="" class="object-fit-cover rounded-3"></div>
+              <div class="my-testimonial"><img src="../images/Testimonial Card1.png" alt=""></div>
             </div>
             <div class="col-md-4">
-              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="../images/Testimonial Card2.png" alt="" class="object-fit-cover rounded-3"></div>
+              <div class="my-testimonial"><img src="../images/Testimonial Card2.png" alt=""></div>
             </div>
             <div class="col-md-4">
-              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="../images/Testimonial Card3.png" alt="" class="object-fit-cover rounded-3"></div>
+              <div class="my-testimonial"><img src="../images/Testimonial Card3.png" alt=""></div>
             </div>
           </div>
         </div>
+
         <div class="carousel-item">
           <div class="row g-3">
             <div class="col-md-4">
-              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="../images/Testimonial Card1.png" alt="" class="object-fit-cover rounded-3"></div>
+              <div class="my-testimonial"><img src="../images/Testimonial Card1.png" alt=""></div>
             </div>
             <div class="col-md-4">
-              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="../images/Testimonial Card2.png" alt="" class="object-fit-cover rounded-3"></div>
+              <div class="my-testimonial"><img src="../images/Testimonial Card2.png" alt=""></div>
             </div>
             <div class="col-md-4">
-              <div class="ratio ratio-16x9 bg-light rounded-3 p-3"><img src="../images/Testimonial Card3.png" alt="" class="object-fit-cover rounded-3"></div>
+              <div class="my-testimonial"><img src="../images/Testimonial Card3.png" alt=""></div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
- <!-- Brands Section -->
-<div class="row align-items-center justify-content-center pt-5 mt-4 border-top text-center gy-3 gx-2">
-  <div class="col-4 col-sm-2">
-    <img src="../images/brand1.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
-  </div>
-  <div class="col-4 col-sm-2">
-    <img src="../images/brand 2.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
-  </div>
-  <div class="col-4 col-sm-2">
-    <img src="../images/brand 3.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
-  </div>
-  <div class="col-4 col-sm-2">
-    <img src="../images/brand 4.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
-  </div>
-  <div class="col-4 col-sm-2">
-    <img src="../images/brand 5.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
-  </div>
-  <div class="col-4 col-sm-2">
-    <img src="../images/brand 6.png" alt="Brand Logo" class="img-fluid opacity-75 object-fit-contain" style="max-height: 40px; max-width: 100px;">
-  </div>
-</div>
+    <!-- Brands -->
+    <div class="row align-items-center justify-content-center pt-5 mt-4 border-top text-center gy-3 gx-2">
+      <div class="col-4 col-sm-2"><img src="../images/brand1.png" alt="Brand Logo" class="my-brand-img"></div>
+      <div class="col-4 col-sm-2"><img src="../images/brand 2.png" alt="Brand Logo" class="my-brand-img"></div>
+      <div class="col-4 col-sm-2"><img src="../images/brand 3.png" alt="Brand Logo" class="my-brand-img"></div>
+      <div class="col-4 col-sm-2"><img src="../images/brand 4.png" alt="Brand Logo" class="my-brand-img"></div>
+      <div class="col-4 col-sm-2"><img src="../images/brand 5.png" alt="Brand Logo" class="my-brand-img"></div>
+      <div class="col-4 col-sm-2"><img src="../images/brand 6.png" alt="Brand Logo" class="my-brand-img"></div>
+    </div>
   </div>
 </section>
-
 <!-- END of my page content -->
 <!-- NEWSLETTER -->
   <section class="newsletter">
