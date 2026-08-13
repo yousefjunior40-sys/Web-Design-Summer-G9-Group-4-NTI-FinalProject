@@ -1,0 +1,135 @@
+/* ==========================================
+   1. Brand Colors & General Styles
+   ========================================== */
+.btn-success,
+.bg-success {
+  background-color: #00b207 !important;
+  border-color: #00b207 !important;
+}
+
+.text-success {
+  color: #00b207 !important;
+}
+
+.btn-outline-success {
+  color: #00b207 !important;
+  border-color: #00b207 !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #00b207 !important;
+  color: #fff !important;
+}
+
+.btn-dark {
+  background-color: #333333 !important;
+  border-color: #333333 !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.extra-small {
+  font-size: 11px;
+}
+
+
+/* ==========================================
+   2. Media & Image Dimensions
+   ========================================== */
+.blog-img {
+  height: 240px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery-img {
+  height: 65px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+/* ==========================================
+   3. Cards & Animations
+   ========================================== */
+.blog-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.fa-brands:hover,
+.fa-regular:hover,
+.fa-solid:hover {
+  color: #00b207 !important;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+
+/* ==========================================
+   4. Hero Banner & Breadcrumbs
+   ========================================== */
+.hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+              url('images/bunch-different-fruits-including-one-that-says-fruit_198067-992584.jpg') no-repeat center center;
+  background-size: cover;
+  height: 120px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.6);
+  content: ">";
+}
+
+
+/* ==========================================
+   5. Pagination
+   ========================================== */
+.pagination .page-link {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+
+
+/* ==========================================
+   6. Shopping Cart Component
+   ========================================== */
+.quantity-box {
+  width: 90px;
+  background-color: #f8f9fa;
+  border: 1px solid #e6e6e6;
+  border-radius: 50px;
+  padding: 2px 8px;
+}
+
+.input-group .btn,
+.input-group .form-control {
+  border-radius: 50px !important;
+}
+
+
+/* ==========================================
+   7. Footer Section
+   ========================================== */
+.footer-section a:hover {
+  color: #00b207 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-section .bg-dark {
+  background-color: #000000 !important;
+}
