@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecobazar - Shopping Cart</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <!-- 1. Top Bar -->
+    <div class="bg-dark text-white-50 py-2 small">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Location -->
+        <div class="d-flex align-items-center gap-2">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Store location: Lincoln- 344, Illinois, Chicago, USA</span>
+        </div>
+
+        <!-- Language, Currency & Auth -->
+        <div class="d-flex align-items-center gap-3">
+          <div class="dropdown">
+            <a class="text-white-50 text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Eng</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Eng</a></li>
+              <li><a class="dropdown-item" href="#">Ara</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a class="text-white-50 text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">USD</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">USD</a></li>
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+            </ul>
+          </div>
+          <span class="border-end border-secondary opacity-50 h-100"></span>
+          <a href="#" class="text-white-50 text-decoration-none">Sign In / Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Main Header (Logo, Search, Cart) -->
+    <div class="py-3 border-bottom">
+      <div class="container d-flex align-items-center justify-content-between gap-3">
+        <!-- Logo -->
+        <a href="#" class="d-flex align-items-center text-decoration-none text-dark fw-bold fs-3">
+          <i class="fa-solid fa-leaf text-success me-2"></i>
+          <span>Ecobazar</span>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="flex-grow-1 mx-lg-5 mx-2" style="max-width: 500px;">
+          <div class="bg-white border rounded-2 p-1 d-flex align-items-center">
+            <i class="fa-solid fa-magnifying-glass text-muted ps-2"></i>
+            <input type="text" class="form-control border-0 bg-transparent shadow-none ps-2" placeholder="Search">
+            <button class="btn btn-success rounded-2 px-4 text-nowrap fw-medium" type="button">Search</button>
+          </div>
+        </div>
+
+        <!-- Icons (Wishlist & Cart) -->
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-dark fs-4 text-decoration-none me-2">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <div class="d-flex align-items-center gap-2 border-start ps-3">
+            <div class="position-relative">
+              <i class="fa-solid fa-bag-shopping fs-4"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success" style="font-size: 10px;">2</span>
+            </div>
+            <div class="ms-2 d-none d-sm-block text-start small">
+              <div class="text-muted" style="font-size: 11px;">Shopping cart:</div>
+              <div class="fw-bold cart-header-total">$84.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-2">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <!-- Nav Links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-success fw-medium" href="#" data-bs-toggle="dropdown">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" href="#" data-bs-toggle="dropdown">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" href="#" data-bs-toggle="dropdown">Pages</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" href="#" data-bs-toggle="dropdown">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Phone Number -->
+          <div class="d-flex align-items-center gap-2 text-dark fw-bold">
+            <i class="fa-solid fa-phone-volume fs-5"></i>
+            <span>(219) 555-0114</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 4. Hero Banner / Breadcrumb Section -->
+  <section class="hero-banner d-flex align-items-center">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="#" class="text-white opacity-75 text-decoration-none">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li class="breadcrumb-item active text-success fw-medium" aria-current="page">
+            Blog
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Shopping Cart Section -->
+  <section class="py-5">
+    <div class="container">
+      <!-- Title -->
+      <h3 class="text-center fw-bold mb-4">My Shopping Cart</h3>
+
+      <div class="row g-4">
+        <!-- Left Column: Products Table & Coupon Code -->
+        <div class="col-lg-8">
+          
+          <!-- Cart Table Card -->
+          <div class="card border rounded-3 p-3 mb-4 shadow-sm">
+            <div class="table-responsive">
+              <table class="table align-middle text-uppercase small text-muted mb-0">
+                <thead class="border-bottom">
+                  <tr>
+                    <th scope="col" class="py-3 fw-normal">Product</th>
+                    <th scope="col" class="py-3 fw-normal">Price</th>
+                    <th scope="col" class="py-3 fw-normal text-center">Quantity</th>
+                    <th scope="col" class="py-3 fw-normal">Subtotal</th>
+                    <th scope="col" class="py-3 fw-normal"></th>
+                  </tr>
+                </thead>
+                <tbody class="text-dark fw-medium">
+                  <!-- Product 1 -->
+                  <tr>
+                    <td class="py-3">
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="images/green-capsicum-1000x1000.jpg" class="rounded" width="60">
+                        <span>Green Capsicum</span>
+                      </div>
+                    </td>
+                    <td class="unit-price">$14.00</td>
+                    <td>
+                      <!-- Quantity Selector -->
+                      <div class="quantity-box d-flex align-items-center justify-content-between mx-auto">
+                        <button class="btn btn-sm border-0 text-muted p-0 ms-2 btn-minus">-</button>
+                        <span class="item-qty">5</span>
+                        <button class="btn btn-sm border-0 text-muted p-0 me-2 btn-plus">+</button>
+                      </div>
+                    </td>
+                    <td class="item-subtotal">$70.00</td>
+                    <td class="text-end">
+                      <button class="btn btn-sm text-muted rounded-circle border p-1 btn-remove" style="width:25px; height:25px; line-height:10px;">×</button>
+                    </td>
+                  </tr>
+
+                  <!-- Product 2 -->
+                  <tr>
+                    <td class="py-3">
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="images/rad .jpg" alt="Red Capsicum" class="rounded" width="60">
+                        <span>Red Capsicum</span>
+                      </div>
+                    </td>
+                    <td class="unit-price">$14.00</td>
+                    <td>
+                      <!-- Quantity Selector -->
+                      <div class="quantity-box d-flex align-items-center justify-content-between mx-auto">
+                        <button class="btn btn-sm border-0 text-muted p-0 ms-2 btn-minus">-</button>
+                        <span class="item-qty">1</span>
+                        <button class="btn btn-sm border-0 text-muted p-0 me-2 btn-plus">+</button>
+                      </div>
+                    </td>
+                    <td class="item-subtotal">$14.00</td>
+                    <td class="text-end">
+                      <button class="btn btn-sm text-muted rounded-circle border p-1 btn-remove" style="width:25px; height:25px; line-height:10px;">×</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Card Footer Buttons -->
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-2">
+              <a href="#" class="btn btn-light rounded-pill px-4 text-secondary btn-sm fw-medium">Return to shop</a>
+              <button class="btn btn-light rounded-pill px-4 text-secondary btn-sm fw-medium btn-update-cart">Update Cart</button>
+            </div>
+          </div>
+
+          <!-- Coupon Code Card -->
+          <div class="card border rounded-3 p-3 shadow-sm">
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+              <span class="fw-bold fs-6 text-nowrap">Coupon Code</span>
+              <div class="bg-white border rounded-pill p-1 d-flex align-items-center w-100" style="max-width: 450px;">
+                <input type="text" class="form-control border-0 bg-transparent shadow-none ps-3" placeholder="Enter code">
+                <button class="btn btn-dark rounded-pill px-4 text-nowrap fw-medium" type="button">Apply Coupon</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Cart Total Sidebar -->
+        <div class="col-lg-4">
+          <div class="card border rounded-3 p-4 shadow-sm">
+            <h5 class="fw-bold mb-3">Cart Total</h5>
+            
+            <div class="d-flex justify-content-between py-2 border-bottom text-muted small">
+              <span>Subtotal:</span>
+              <span class="fw-bold text-dark cart-subtotal">$84.00</span>
+            </div>
+            
+            <div class="d-flex justify-content-between py-2 border-bottom text-muted small">
+              <span>Shipping:</span>
+              <span class="fw-bold text-dark">Free</span>
+            </div>
+            
+            <div class="d-flex justify-content-between py-3 mb-3 text-muted">
+              <span>Total:</span>
+              <span class="fw-bold fs-5 text-dark cart-final-total">$84.00</span>
+            </div>
+
+            <button class="btn btn-success w-100 rounded-pill py-2 fw-medium">Proceed to checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="bg-light py-4 border-top">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <!-- Title & Subtitle -->
+        <div class="col-lg-5">
+          <h5 class="fw-bold mb-1">Subcribe our Newsletter</h5>
+          <p class="text-muted small mb-0">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+        </div>
+
+        <!-- Email Input & Social Icons -->
+        <div class="col-lg-7 d-flex flex-column flex-sm-row align-items-sm-center justify-content-lg-end gap-3">
+          <div class="bg-white border rounded-pill p-1 d-flex align-items-center ms-lg-auto" style="max-width: 450px; width: 100%;">
+            <input type="email" class="form-control border-0 bg-transparent shadow-none ps-3" placeholder="Your email address">
+            <button class="btn btn-success rounded-pill px-4 text-nowrap fw-medium" type="button">Subscribe</button>
+          </div>
+          
+          <!-- Social Icons -->
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="btn btn-success rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 32px; height: 32px;">
+              <i class="fa-brands fa-facebook-f text-white small"></i>
+            </a>
+            <a href="#" class="text-secondary px-1"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-secondary px-1"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" class="text-secondary px-1"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section bg-dark text-white-50 pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+        
+        <!-- Column 1: About & Contact -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="d-flex align-items-center text-decoration-none text-white fw-bold fs-3 mb-3">
+            <i class="fa-solid fa-leaf text-success me-2"></i>
+            <span>Ecobazar</span>
+          </a>
+          <p class="small opacity-75 mb-3" style="line-height: 1.6;">
+            Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
+          </p>
+          <div class="d-flex align-items-center gap-2 small">
+            <span class="text-white border-bottom border-success border-2 pb-1 fw-medium">(219) 555-0114</span>
+            <span class="opacity-50">or</span>
+            <span class="text-white border-bottom border-success border-2 pb-1 fw-medium">Proxy@gmail.com</span>
+          </div>
+        </div>
+
+        <!-- Column 2: My Account -->
+        <div class="col-lg-2 col-md-6 ms-lg-auto">
+          <h6 class="text-white fw-bold mb-3">My Account</h6>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="text-white-50 text-decoration-none">My Account</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Order History</a></li>
+            <li><a href="#" class="text-white text-decoration-none fw-medium">Shoping Cart</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Wishlist</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Helps -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Helps</h6>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Faqs</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Terms & Condition</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Proxy -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Proxy</h6>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="text-white-50 text-decoration-none">About</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Shop</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Product</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Track Order</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Categories -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Categories</h6>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="text-white-50 text-decoration-none">Fruit & Vegetables</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Meat & Fish</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Bread & Bakery</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Beauty & Health</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar: Copyright & Payment Logos -->
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between pt-3 small opacity-75">
+        <p class="mb-2 mb-md-0">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+        
+        <!-- Payment Icons -->
+        <div class="d-flex align-items-center gap-2 fs-5">
+          <i class="fa-brands fa-cc-apple-pay text-white"></i>
+          <i class="fa-brands fa-cc-visa text-white"></i>
+          <i class="fa-brands fa-cc-discover text-white"></i>
+          <i class="fa-brands fa-cc-mastercard text-white"></i>
+          <span class="badge bg-secondary opacity-75 text-white fw-normal ms-1" style="font-size: 10px;">
+            <i class="fa-solid fa-lock me-1"></i>Secure Payment
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
